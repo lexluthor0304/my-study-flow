@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>サンプル</title>
+  </head>
+  <body>
+    form class="" action="送信先" method="送信方法" enctype="送信形式"
+    <br><br>
+    application/x-www-form-urlencoded： 全ての文字をURLエンコードする。初期設定値。<br><br>
+    multipart/form-data： フォームにファイルを送信する機能がある場合に指定する。<br><br>
+    text/plain： スペースだけ「+」記号に変換する。その他の特殊文字はエンコードしない。<br><br>
+    <form class="" action="mail/mail.cgi" method="post" enctype=",multipart/form-data">
+    </form>
+  </body>
+</html>
