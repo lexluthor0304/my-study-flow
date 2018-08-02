@@ -1,0 +1,21 @@
+@charset "UTF-8";
+.background {
+  background-color: #D8D8D8;
+}
+
+.h1_style {
+  margin-left: 10pt;
+}
+.p_style {
+  color: red;
+  font-size: 12pt
+}
+
+.borderleft {
+  border-left: solid 15px blue;
+}
+
+h2#my_style {
+  color: green;
+  font-size: 30pt;
+}
