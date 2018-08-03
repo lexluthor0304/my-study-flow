@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title></title>
+        <script>
+        function display_form(){
+            var get_name = document.test_form.name_form.value;
+            var get_text = document.test_form.kansou.value;
+            alert(get_name+"さんの感想は"+get_text+"です。");
+        }
+        function del_form(){
+            document.test_form.name_form.value="";
+            document.test_form.kansou.value="";
+        }
+        </script>
+    </head>
+    <body>
+        <form name="test_form">
+            <p>お名前</p><input type="text" name="name_form" id="" value=""><br>
+            <p>感想</p><textarea name="kansou" id="" cols="30" rows="10" value=""></textarea><br><br>
+            <input type="button" value="感想表示" onclick="display_form()"><br><br>
+            <input type="reset" value="リセット" onclick="del_form()"><br>
+        </form>
+    </body>
+</html>
