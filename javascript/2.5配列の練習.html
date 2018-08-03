@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title></title>
+    </head>
+    <body>
+        <! 新しい配列を生成　>
+        <script>
+            var goods = ["チェア", "デスク", "ブックスタンド"];
+            var price = [4000, 12000, 800];
+        </script>
+        <! javascrpitでテーブルを作る >
+        <table border="1">
+            <tr><th>製品名</th><th>価格</th></tr>
+            <script>
+            document.write("<tr>");
+            document.write("<td>"+goods[0]+"</td>");
+            document.write("<td>"+price[0]+"円</td>");
+            document.write("</tr>");
+            document.write("<tr>");
+            document.write("<td>"+goods[1]+"</td>");
+            document.write("<td>"+price[1]+"円</td>");
+            document.write("</tr>");
+            document.write("<tr>");
+            document.write("<td>"+goods[2]+"</td>");
+            document.write("<td>"+price[2]+"円</td>");            
+            document.write("</tr>");
+            </script>
+        </table>
+    </body>
+</html>
