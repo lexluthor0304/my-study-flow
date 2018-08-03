@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title></title>
+        <script>
+        function checker(){
+            for(i=0; i<radio_box_form.radio.length; i++){
+                if(radio_box_form.radio.checked == true){
+                    var hoge = radio_box_form.radio[i].value;
+                    alert(hoge+"が選択されてます。");
+                }
+            }
+
+        }
+        </script>
+    </head>
+    <body>
+        <form name="radio_box_form">
+            <input type="radio" name="radio" value="ラジオ１">ラジオ１<br>
+            <input type="radio" name="radio" value="ラジオ２">ラジオ２<br>
+            <input type="radio" name="radio" value="ラジオ３">ラジオ３<br>
+            <input type="button" value="選択" onclick="checker()">
+        </form>
+    </body>
+</html>
