@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title></title>
+        <script>
+        function boxChecker(){
+            //チェックする項目を記録
+            var str = "" 
+            // forで項目を1つづチェックする
+            for(i=0; i<6; i++){
+                //チェックされてる項目を確認する
+                if(document.check_form.elements[i].checked){
+                    //変数strが空きでない時、区切ってコンマを入れる
+                    if(str != ""){
+                        str =str+",";
+                    }
+                //チェックボックスのvalueの値を変数strに入れる。
+                str = str + document.check_form.elements[i].value;
+                }
+
+            }
+            //空きの時、アラート出る
+            if(str==""){
+                alert("選んでください。")
+            }
+            else{
+                alert(str+"が選びました。")
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <p>あなた好きな動物は？（複数可）</p>
+        <form name="check_form">
+            <input type="checkbox" value="犬">犬<br>
+            <input type="checkbox" value="猫">猫<br>
+            <input type="checkbox" value="兎">兎<br>
+            <input type="checkbox" value="ハムスター">ハムスター<br>
+            <input type="checkbox" value="熱帯魚">熱帯魚<br>
+            <input type="checkbox" value="ここにはない">ここにはない<br>
+            <input type="button" value="確認" onclick="boxChecker()">
+        </form>
+    </body>
+</html>

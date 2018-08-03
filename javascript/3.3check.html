@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title></title>
+        <script>
+        function checker(){
+            var checker = document.check_form.chkbox.checked;
+            if(checker == true){
+                alert("チェックしました。");
+                }
+                else{
+                    alert("チェックしてません。");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form name="check_form">
+            <input type="checkbox" name="chkbox"><p>チェックボックス</p>
+            <input type="button" value="チェック" onclick="checker()">
+        </form>
+    </body>
+</html>
