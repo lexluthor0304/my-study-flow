@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <script>
+        var yobi = new Array("日曜日","月曜日","火曜日","水曜日","木曜日","金曜日","土曜日");   
+        var today = new Date();
+        //曜日　0から始まる
+        var week = today.getDay();
+        //日 1から始まる
+        var day = today.getDate();
+        //年　
+        var year = today.getFullYear();
+        //月　0から始まる
+        var month = today.getMonth();
+        document.write(week+"<br>");
+        document.write(day+"<br>");
+        document.write(year+"<br>");
+        document.write(month+"<br>");
+        document.write("今日は"+yobi[week]+"です。");
+        </script>
+    </body>
+</html>
