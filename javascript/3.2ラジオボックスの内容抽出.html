@@ -5,12 +5,11 @@
         <script>
         function checker(){
             for(i=0; i<radio_box_form.radio.length; i++){
-                if(radio_box_form.radio.checked == true){
+                if(radio_box_form.radio[i].checked == true){
                     var hoge = radio_box_form.radio[i].value;
                     alert(hoge+"が選択されてます。");
                 }
             }
-
         }
         </script>
     </head>
