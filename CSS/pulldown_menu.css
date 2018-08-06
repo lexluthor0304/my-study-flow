@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+.sidenavi{
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+}
+
+.dropdown_btn{
+padding: 6px 8px 6px 16px;
+text-decoration: none;
+font-size: 20pt;
+color: #818181;
+display: block;
+border: 0.5pt;
+border-style: solid;
+background: none;
+width: 100%;
+text-align: left;
+cursor: pointer;
+outline: none;
+}
+
+.dropdown_btn:hover{
+    color: #ff11ff
+}
+
+.dropdown_container{
+    display: none;
+    background-color: #fff;
+    padding-left: 8px;
+}
+
+.active {
+    background-color: orange;
+    color: white;
+  }
