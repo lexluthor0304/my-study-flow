@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title></title>
+        <script>
+        function saiten() {
+            var seikai = 0; //正解数を入れる変数
+
+            //答えの番号を配列に入れる
+            //var trueAns = new Array(0, 5, 8, 10, 14);
+            
+            //正解のラジオボックスがチェックされているかどうかの確認
+
+            if(document.check_form.Q1[0].checked)
+                seikai++;
+            if(document.check_form.Q2[2].checked)
+                seikai++;
+            if(document.check_form.Q3[1].checked)
+                seikai++;
+            alert("あなたは" + seikai * 20 + "点でした");
+        }
+        </script>
+    </head>
+    <body>
+        <form name="check_form">
+            カナダの首都は？<br>
+            <input type="radio" name="Q1">オタワ<br>
+            <input type="radio" name="Q1">トロント<br>
+            <input type="radio" name="Q1">モントリオール<br>
+            ドイツの首都は？<br>
+            <input type="radio" name="Q2">ハンブルク<br>
+            <input type="radio" name="Q2">ブレーメン<br>
+            <input type="radio" name="Q2">ベルリン<br>
+            スペインの首都は？<br>
+            <input type="radio" name="Q3">バルセロナ<br>
+            <input type="radio" name="Q3">マドリード<br>
+            <input type="radio" name="Q3">リスボン<br>
+            <input type="button" value="採点" onclick="saiten()">
+        </form>
+    </body>
+</html>

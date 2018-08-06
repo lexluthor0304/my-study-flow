@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+    function fc(){
+        document.fc_form.text.focus();
+    }
+    function bl(){
+        document.fc_form.text.blur();
+    }
+    </script>
+</head>
+<body>
+    <form name="fc_form">
+        <input type="text" name="text" id=""><br><br>
+        <input type="button" value="合わせる" onclick="fc()"><br><br>
+        <input type="button" value="外す" onclick="bl()">
+    </form>
+</body>
+</html>

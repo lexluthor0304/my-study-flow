@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible">
+    <title>Document</title>
+    <script>
+    function wupBtn(){
+        //値を変数に入れる
+        var name = document.send.name.value;
+        var kanso = document.send.kanso.value;
+        //nameあるいはkanso、どっちの一方は空いているであれば
+        if((name == "") || (kanso == "")){
+            document.send.btn.disabled = true;
+        }
+        else{
+            document.send.btn.disabled = false;
+        }
+    }
+    </script>
+</head>
+<body>
+    <form name="send">
+        お名前：<input type="text" name="name" onchange="wupBtn()"><br><br>
+        感想：<textarea name="kanso" id="" cols="20" rows="2" onchange="wupBtn()"></textarea><br><br>
+        <input type="button" value="送信" name="btn" disabled>
+    </form>
+</body>
+</html>

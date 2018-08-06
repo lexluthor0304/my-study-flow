@@ -1,0 +1,23 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+//フォーカスを合わせる関数
+function fc(){
+document.fcset.text1.focus();
+}
+//フォーカスを外す関数
+function bl(){
+document.fcset.text1.blur();
+}
+</script>
+</head>
+<body>
+<form name="fcset">
+<input type="text" name="text1" value="">
+<input type="button" value="合わせる" onclick="fc()">
+<input type="button" value="外す" onclick="bl()"><br>
+</form>
+</body>
+</html>

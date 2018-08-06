@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible">
+    <title>Document</title>
+    <script>
+    function selectedValue() {
+        //for(i=0; i<select_form.dropList.length; i++){ //iを配列に入れて、配列の長さを測る
+        //    if(select_form.dropList[i].checked); //もし配列の値を選択されたら
+        //    var value = select_form.dropList.value; //値をvalueに入れる
+        var selVal = select_form.dropList.value;
+        alert(selVal + "が選択されている。");
+        }
+    </script>
+</head>
+<body>
+    <form name="select_form">
+        <select name="dropList">
+            <option value="ドロップ１">ドロップ１</option>
+            <option value="ドロップ２">ドロップ２</option>
+            <option value="ドロップ３">ドロップ３</option>
+        </select>
+        <input type="button" value="選択" onclick="selectedValue()">
+    </form>
+</body>
+</html>
