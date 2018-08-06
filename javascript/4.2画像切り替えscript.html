@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+    //画像を格納する
+    var img = new Array();
+
+    img[0] = new Image();
+    img[0].src = "../img/motorcycle.jpg";
+    img[1] = new Image();
+    img[1].src = "../img/motorcycle1.jpg";
+    img[2] = new Image();
+    img[2].src = "../img/motorcycle2.jpg";
+
+    //画像変数を初期化(グローバル変数)
+    var cnt = 0;
+
+    function changeImg(){
+
+        //画像番号を進める
+        if(cnt == 2){
+            cnt=0;
+        }else{
+            cnt++;
+        }
+
+        //画像を切り替える
+        document.getElementById("pic").src=img[cnt].src;
+    }
+    </script>
+</head>
+<body>
+    <img id="pic" src="../img/motorcycle.jpg" alt="" onclick="changeImg()">
+</body>
+</html>

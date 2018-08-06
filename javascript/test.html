@@ -3,21 +3,24 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <script>
-//フォーカスを合わせる関数
-function fc(){
-document.fcset.text1.focus();
+function reWrite(num)
+{
+if (num==1)
+{
+document.getElementById("str").textContent="<b>テキスト</b>の書換え";
 }
-//フォーカスを外す関数
-function bl(){
-document.fcset.text1.blur();
+else
+{
+document.getElementById("str").innerHTML="<b>タグ</b>を含む書換え";
+}
 }
 </script>
 </head>
 <body>
-<form name="fcset">
-<input type="text" name="text1" value="">
-<input type="button" value="合わせる" onclick="fc()">
-<input type="button" value="外す" onclick="bl()"><br>
+<form>
+<input type="button" value="テキスト" onclick="reWrite(1)">
+<input type="button" value="HTMLタグ" onclick="reWrite(2)">
 </form>
+<div id="str"></div>
 </body>
 </html>

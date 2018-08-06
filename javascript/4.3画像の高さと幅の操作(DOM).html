@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible">
+    <title>Document</title>
+    <script>
+    function imgBig(){
+        document.getElementById("img").style.width="75%";
+        document.getElementById("img").style.height="75%";
+    }
+
+    function imgSmall(){
+        document.getElementById("img").style.width="50%";
+        document.getElementById("img").style.height="50%";
+    }
+    </script>
+</head>
+<body>
+    <!-- 画像のサイズを半分にする -->
+    <img id="img" src="../img/motorcycle.jpg" alt="" width="50%" height="50%" onmouseover="imgBig()" onmouseout="imgSmall()">
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible">
+    <title>Document</title>
+    <script>
+    function reWrite(num){
+        if(num==1){
+            document.getElementById("str").textContent="<b>テキスト</b>は文字列です。";
+        }else{
+            document.getElementById("str").innerHTML="<b>HTML</b>はHTML tagです。";
+        }
+    }
+    </script>
+</head>
+<body>
+    <form>
+        <input type="button" value="テキスト" onclick="reWrite(1)">
+        <input type="button" value="HTMLタグ" onclick="reWrite(0)">
+    </form>
+    <div id="str"></div>
+</body>
+</html>

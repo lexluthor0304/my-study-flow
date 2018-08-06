@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible">
+    <title>Document</title>
+    <script>
+    function windowOpen(num){
+        if(num==1){
+            window.open("https://www.google.com", "sub", "width=50%, height=50%, top=0,left=0, menubar=no, scrollbars=no, toolbar=no, status=no, directories=no, resizable=no");
+        }else{
+            window.open("https://www.google.com", "sub", "width=640, height=480, top=0, left=0, menubar=yes, scrollbars=yes, toolbar=yes, status=yes, directories=yes, resizable=yes");
+        }
+    }
+    </script>
+</head>
+<body>
+    <form >
+        <input type="button" value="googleを開く" onclick="windowOpen(1)"><br><br>
+        <input type="button" value="googleを開く2" onclick="windowOpen(2)">
+    </form>
+</body>
+</html>
