@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible">
+    <title>Document</title>
+    <script>
+    //オープン元を参照して変数に代入する
+    var num = window.opener.document.pForm.numTxt.value;
+    var str = window.opener.document.pForm.stringText.value;
+
+    function close_youself(){
+        window.opener.document.pForm.numTxt.value = document.cForm.numTxt.value;
+        window.opener.document.pForm.stringText.value = document.cForm.stringText.value;
+        window.close();
+    }
+    </script>
+</head>
+<body>
+    <form name="cForm">
+        <input type="text" name="numTxt" id="">
+        <input type="text" name="stringTxt" id="">
+        <script>
+        </script>
+        <input type="button" value="閉める" onclick="close_youself()">
+    </form>
+</body>
+</html>

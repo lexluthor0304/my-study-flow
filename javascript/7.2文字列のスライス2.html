@@ -1,0 +1,44 @@
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+    var bread = new Array("", "メロンパン/菓子パン/130円", "あんぱん/菓子パン/100円", 
+                        "ウィンナーロール/惣菜パン/170円", "ハムエッグパン/惣菜/140円", 
+                        "ミックスサンド/サンドイッチ/200円")
+    function choice() {
+        var pain = new Array();
+        var selIndex = document.panForm.selBox.selectedIndex;
+        if (selIndex != 0) {
+            var str = bread[selIndex];
+            pain = str.split("/");
+            for (var i = 1; i <= 3; i++) {
+                //panFormの[1]からループ(select = 0)
+                document.panForm.elements[i].value = pain[i-1]; //painは0から始まるんで、i-1となってる
+            }
+            } else{
+                for (i = 1; i <= 3; i++) {
+                    document.panForm.elements[i].value = "";
+                }
+        }
+    }
+    </script>
+</head>
+<body>
+    <form name="panForm">
+        <select name="selBox" onchange="choice()">
+            <option value="">*商品を選んでください。</option>
+            <option value="">メロンパン</option>
+            <option value="">あんぱん</option>
+            <option value="">ウィンナーロール</option>
+            <option value="">ハムエッグ</option>
+            <option value="">ミックスサンド</option>
+        </select><br>
+        商品：<input type="text" name="item" id="" readonly><br>
+        種類：<input type="text" name="type" id="" readonly><br>
+        価格：<input type="text" name="price" id="" readonly><br>
+    </form>
+</body>
+</html>

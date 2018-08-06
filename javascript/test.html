@@ -3,24 +3,39 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <script>
-function reWrite(num)
-{
-if (num==1)
-{
-document.getElementById("str").textContent="<b>テキスト</b>の書換え";
+//商品データを配列breadに入れる
+var bread = new Array("", "メロンパン/菓子パン/130円", "あんぱん/菓子パン/100円",
+"ウィンナーロール/惣菜パン/170円", "ハムエッグ/惣菜パン/140円", "ミックスサンド/サンドウィッチ/200円");
+function choice() {
+var pain = new Array();
+var selIndex = document.panForm.selBox.selectedIndex;
+if (selIndex != 0) {
+var str = bread[selIndex];
+pain = str.split("/");
+for (var i = 1; i <= 3; i++) {
+document.panForm.elements[i].value = pain[i-1];
 }
-else
-{
-document.getElementById("str").innerHTML="<b>タグ</b>を含む書換え";
+} else {
+for (var i = 1; i <= 3; i++) {
+document.panForm.elements[i].value = "";
+}
 }
 }
 </script>
 </head>
 <body>
-<form>
-<input type="button" value="テキスト" onclick="reWrite(1)">
-<input type="button" value="HTMLタグ" onclick="reWrite(2)">
+<form name="panForm">
+<select name="selBox" onChange="choice()">
+<option>商品を選択してください</option>
+<option>メロンパン</option>
+<option>あんぱん</option>
+<option>ウィンナーロール</option>
+<option>ハムエッグ</option>
+<option>ミックスサンド</option>
+</select> <br>
+商品：<input type="text" name="item" value="" readonly readonlyreadonlyreadonly readonly><br>
+種類：<input type="text" name="type" value="" readonly readonlyreadonlyreadonly readonly ><br>
+価格：<input type="text" name="price" value="" readonly readonly readonlyreadonly readonly ><br>
 </form>
-<div id="str"></div>
 </body>
 </html>
