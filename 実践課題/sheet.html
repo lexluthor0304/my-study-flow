@@ -13,7 +13,7 @@
 </head>
 <body>
     <table cellpadding="20" style="border: 1px solid">
-        <form>
+        <form name="sample_form">
         <tr >
             <td colspan="5" align="center"><h1>個人情報</h1></td>
         </tr>
@@ -28,10 +28,10 @@
             <td><input type="text" name="" id=""></td>
             <td align="center">名（カナ）：</td>
             <td><input type="text" name="" id=""></td>
-            <td align="right">性別：<select name="" id="">
-                <option value=""></option>
-                <option value="">男　　　　　　</option>
-                <option value="">女　　　　　　</option>
+            <td align="right">性別：<select name="selbox" id="" onchange="">
+                <option value="" ></option>
+                <option value="男">男　　　　　　</option>
+                <option value="女">女　　　　　　</option>
             </select></td>
         </tr>
         <tr>
@@ -53,11 +53,20 @@
         </tr>
         <tr>
             <td></td>
-            <td><input type="button" value="リセット" type="reset" class="button"></td>
+            <td><input type="button" value="リセット" type="reset" class="button" onclick="reset_btn()"></td>
             <td><button class="button">決定</button></td>
         </tr>
     </form>
     </table> 
-    
+    <script>
+    function reset_btn(){
+        document.sample_form.reset();
+    }
+
+    function selVal(){
+        var getSel = sample_form.selbox.value;
+
+    }
+    </script>
 </body>
 </html>
