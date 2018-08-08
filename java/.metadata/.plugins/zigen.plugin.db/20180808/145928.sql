@@ -1,0 +1,1 @@
+CREATE TABLE school.personal(id int, name varchar(20));
