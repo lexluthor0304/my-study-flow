@@ -9,6 +9,7 @@
         .button{
             background-color:lightpink;
         }
+
     </style>
 </head>
 <body>
@@ -28,27 +29,24 @@
             <td><input type="text" name="" id=""></td>
             <td align="center">名（カナ）：</td>
             <td><input type="text" name="" id=""></td>
-            <td align="right">性別：<select name="selbox" id="" onchange="">
-                <option value="" ></option>
+            <td align="right">性別：<select name="selbox" onchange="selVal()">
+                <option value="　" ></option>
                 <option value="男">男　　　　　　</option>
                 <option value="女">女　　　　　　</option>
             </select></td>
         </tr>
         <tr>
             <td>趣味：</td>
-            <td><input type="checkbox" name="" id="">サッカー</td>
-            <td><input type="checkbox" name="" id="">フットサル</td>
+            <td id="a"><span><input type="checkbox" value="サッカー">サッカー
+            <input type="checkbox" value="フットサル">フットサル</span></td>
         </tr>
         <tr>
             <td></td>
-            <td>
-                <input type="checkbox" name="" id="">ダンス
-            </td>
-            <td>
-                <input type="checkbox" name="" id="">旅行
-            </td>
-            <td>
-                <input type="checkbox" name="" id="">撮影
+            <td id="b"><span>
+                <input type="checkbox" name="checkbox2" id="" value="ダンス">ダンス
+                <input type="checkbox" name="checkbo2" id="" value="旅行">旅行
+                <input type="checkbox" name="checkbox2" id="" value="撮影">撮影
+            </span>
             </td>
         </tr>
         <tr>
@@ -61,11 +59,35 @@
     <script>
     function reset_btn(){
         document.sample_form.reset();
+        document.getElementById("a").style.backgroundColor="white";
+        document.getElementById("a").style.display="block";
+        document.getElementById("b").style.backgroundColor="white";
+        document.getElementById("b").style.display="block";
     }
 
     function selVal(){
-        var getSel = sample_form.selbox.value;
+        var i;
+        for(i=0; i<=sample_form.selbox.length; i++) {
+            if(sample_form.selbox.value[i] == "男"){
+                document.getElementById("a").style.backgroundColor="blue";
+                document.getElementById("a").style.display="block";
+                document.getElementById("b").style.display="none";
+                
+            } else if(sample_form.selbox.value[i] == "女"){
+                document.getElementById("b").style.backgroundColor="yellow";
+                document.getElementById("b").style.display="block";
+                document.getElementById("a").style.display="none";
+            } else if(sample_form.selbox.value[i] == "　"){
+                document.getElementById("a").style.backgroundColor="white";
+                document.getElementById("a").style.display="block";
+                document.getElementById("b").style.backgroundColor="white";
+                document.getElementById("b").style.display="block";
+            }
+        }
+    }
 
+    function test(){
+        alert(sample_form.selbox.length);
     }
     </script>
 </body>
