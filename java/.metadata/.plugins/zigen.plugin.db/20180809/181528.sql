@@ -1,0 +1,5 @@
+
+
+USE test;
+
+DELETE  FROM temptbl WHERE TO_TOROKUBI='20150903';

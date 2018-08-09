@@ -253,11 +253,6 @@
     </void>
    </object>
   </void>
-  <void property="date">
-   <object class="java.util.Date">
-    <long>1533804085578</long>
-   </object>
-  </void>
   <void property="fileMode">
    <boolean>true</boolean>
   </void>
@@ -266,7 +261,7 @@
 &#13;
 USE test;&#13;
 &#13;
-SELECT TO_TOROKUBI FROM temptbl GROUP BY TO_TOROKUBI HAVING COUNT(TO_TOROKUBI)=2015...</string>
+DELETE  FROM temptbl WHERE TO_TOROKUBI=&apos;20150903&apos;;</string>
   </void>
  </object>
 </java>
