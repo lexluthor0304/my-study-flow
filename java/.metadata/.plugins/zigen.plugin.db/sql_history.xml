@@ -255,7 +255,7 @@
   </void>
   <void property="date">
    <object class="java.util.Date">
-    <long>1533794201561</long>
+    <long>1533800932413</long>
    </object>
   </void>
   <void property="fileMode">
@@ -264,7 +264,8 @@
   <void property="sql">
    <string>USE school;&#13;
 &#13;
-SELECT * FROM `resource` INNER JOIN class_name ON resource.class = class_name.class;</string>
+SELECT date, code, resource.name, class_name.name, num, price &#13;
+FROM purchase_history...</string>
   </void>
  </object>
 </java>

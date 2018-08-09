@@ -135,3 +135,65 @@ SELECT * FROM テーブル１ INNER JOIN テーブル２ USING(列名);
 */
 
 SELECT * FROM `resource` INNER JOIN class_name USING(class);
+
+SELECT code, resource.name, price, class_name.name FROM `resource` INNER JOIN class_name USING(class);
+
+/*
+交差結合
+SELECT * FROM テーブル１ CROSS JOIN テーブル２;
+*/
+
+SELECT * FROM `resource` CROSS JOIN class_name; /*WHERE条件を付けても可*/
+
+SELECT * FROM `resource` CROSS JOIN class_name WHERE resource.class = class_name.class; 
+
+/*
+外部結合
+例文１（左から結合）：SELECT テーブル.カラム名, ...FROM テーブル名１ LEFT OUTER JOIN テーブル名２ ON テーブル1.カラム名1 = テーブル2.カラム名2
+例文２（右から結合）：SELECT テーブル.カラム名, ...FROM テーブル名１ RIGHT OUTER JOIN テーブル名２ ON テーブル1.カラム名1 = テーブル2.カラム名2
+*/
+
+CREATE TABLE purchase_history(
+    date DATE NOT NULL,
+    code CHAR(6) NOT NULL,
+    num INT NOT NULL
+);
+
+INSERT INTO purchase_history(date, code, num) VALUE('2013/1/13', '100001', 100);
+INSERT INTO purchase_history(date, code, num) VALUE('2013/1/17', '100002', 20);
+INSERT INTO purchase_history(date, code, num) VALUE('2013/2/1', '100103', 31);
+INSERT INTO purchase_history(date, code, num) VALUE('2013/2/3', '100101', 5);
+INSERT INTO purchase_history(date, code, num) VALUE('2013/3/5', '100203', 31);
+INSERT INTO purchase_history(date, code, num) VALUE('2013/3/12', '100003', 13);
+INSERT INTO purchase_history(date, code, num) VALUE('2013/4/30', '100201', 24);
+INSERT INTO purchase_history(date, code, num) VALUE('2013/5/9', '100001', 50);
+INSERT INTO purchase_history(date, code, num) VALUE('2013/7/19', '100C02', 10);
+INSERT INTO purchase_history(date, code, num) VALUE('2013/8/25', '100102', 5);
+
+SELECT * FROM purchase_history LEFT OUTER JOIN resource ON purchase_history.code = resource.code;/*左から*/
+SELECT * FROM purchase_history RIGHT OUTER JOIN resource ON purchase_history.code = resource.code;/*右から*/
+
+SELECT * FROM purchase_history LEFT OUTER JOIN resource USING(code);/*左から （USINGの場合）*/
+SELECT * FROM purchase_history RIGHT OUTER JOIN resource USING(code);/*右から （USINGの場合）*/
+
+/*内部結合が、共通部分があるものしか結合しないのに対して、
+外部結合は、共通部分がない行も結合し、該当するデータがないカラムには、
+NULLを入れて出力する*/
+
+SELECT * FROM purchase_history INNER JOIN resource USING(code);/*内部結合の場合*/
+
+/*
+複数のテーブルを結合
+*/
+
+SELECT date, code, resource.name, class_name.name, num, price 
+FROM purchase_history INNER JOIN resource USING(code) 
+INNER JOIN class_name USING(class);
+
+/*
+データ更新
+UPDATE テーブル名 SET 列名1 = 値1, 列名2 = 値2, …WHERE [条件];
+*/
+
+UPDATE resource SET price = price + 10 WHERE class='text';
+
