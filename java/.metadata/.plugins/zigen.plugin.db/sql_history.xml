@@ -1,267 +1,1562 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <java version="1.8.0_40" class="java.beans.XMLDecoder">
- <object class="zigen.plugin.db.core.SQLHistory">
-  <void property="config">
-   <object class="zigen.plugin.db.core.DBConfig" id="DBConfig0">
-    <void property="autoCommit">
+ <object class="java.util.LinkedList">
+  <void method="add">
+   <object class="zigen.plugin.db.core.SQLHistory">
+    <void property="config">
+     <object class="zigen.plugin.db.core.DBConfig" id="DBConfig0">
+      <void property="autoCommit">
+       <boolean>true</boolean>
+      </void>
+      <void property="charset">
+       <string>utf-8</string>
+      </void>
+      <void property="classPaths">
+       <array class="java.lang.String" length="1">
+        <void index="0">
+         <string>C:\Program Files (x86)\MySQL\Connector.J 5.1\mysql-connector-java-5.1.35-bin.jar</string>
+        </void>
+       </array>
+      </void>
+      <void property="convertUnicode">
+       <boolean>true</boolean>
+      </void>
+      <void property="databaseProductVersion">
+       <string>5.6.25-log</string>
+      </void>
+      <void property="dbName">
+       <string>MySQL</string>
+      </void>
+      <void property="dbType">
+       <int>2</int>
+      </void>
+      <void property="displayedSchemas">
+       <array class="zigen.plugin.db.core.SchemaInfo" length="15">
+        <void index="0">
+         <object class="zigen.plugin.db.core.SchemaInfo">
+          <void property="checked">
+           <boolean>true</boolean>
+          </void>
+          <void property="config">
+           <object idref="DBConfig0"/>
+          </void>
+          <void property="name">
+           <string>information_schema</string>
+          </void>
+         </object>
+        </void>
+        <void index="1">
+         <object class="zigen.plugin.db.core.SchemaInfo">
+          <void property="checked">
+           <boolean>true</boolean>
+          </void>
+          <void property="config">
+           <object idref="DBConfig0"/>
+          </void>
+          <void property="name">
+           <string>company</string>
+          </void>
+         </object>
+        </void>
+        <void index="2">
+         <object class="zigen.plugin.db.core.SchemaInfo">
+          <void property="checked">
+           <boolean>true</boolean>
+          </void>
+          <void property="config">
+           <object idref="DBConfig0"/>
+          </void>
+          <void property="name">
+           <string>companydata</string>
+          </void>
+         </object>
+        </void>
+        <void index="3">
+         <object class="zigen.plugin.db.core.SchemaInfo">
+          <void property="checked">
+           <boolean>true</boolean>
+          </void>
+          <void property="config">
+           <object idref="DBConfig0"/>
+          </void>
+          <void property="name">
+           <string>hanbai</string>
+          </void>
+         </object>
+        </void>
+        <void index="4">
+         <object class="zigen.plugin.db.core.SchemaInfo">
+          <void property="checked">
+           <boolean>true</boolean>
+          </void>
+          <void property="config">
+           <object idref="DBConfig0"/>
+          </void>
+          <void property="name">
+           <string>list</string>
+          </void>
+         </object>
+        </void>
+        <void index="5">
+         <object class="zigen.plugin.db.core.SchemaInfo">
+          <void property="checked">
+           <boolean>true</boolean>
+          </void>
+          <void property="config">
+           <object idref="DBConfig0"/>
+          </void>
+          <void property="name">
+           <string>login</string>
+          </void>
+         </object>
+        </void>
+        <void index="6">
+         <object class="zigen.plugin.db.core.SchemaInfo">
+          <void property="checked">
+           <boolean>true</boolean>
+          </void>
+          <void property="config">
+           <object idref="DBConfig0"/>
+          </void>
+          <void property="name">
+           <string>mysql</string>
+          </void>
+         </object>
+        </void>
+        <void index="7">
+         <object class="zigen.plugin.db.core.SchemaInfo">
+          <void property="checked">
+           <boolean>true</boolean>
+          </void>
+          <void property="config">
+           <object idref="DBConfig0"/>
+          </void>
+          <void property="name">
+           <string>new_schema</string>
+          </void>
+         </object>
+        </void>
+        <void index="8">
+         <object class="zigen.plugin.db.core.SchemaInfo">
+          <void property="checked">
+           <boolean>true</boolean>
+          </void>
+          <void property="config">
+           <object idref="DBConfig0"/>
+          </void>
+          <void property="name">
+           <string>new_schema1</string>
+          </void>
+         </object>
+        </void>
+        <void index="9">
+         <object class="zigen.plugin.db.core.SchemaInfo">
+          <void property="checked">
+           <boolean>true</boolean>
+          </void>
+          <void property="config">
+           <object idref="DBConfig0"/>
+          </void>
+          <void property="name">
+           <string>performance_schema</string>
+          </void>
+         </object>
+        </void>
+        <void index="10">
+         <object class="zigen.plugin.db.core.SchemaInfo">
+          <void property="checked">
+           <boolean>true</boolean>
+          </void>
+          <void property="config">
+           <object idref="DBConfig0"/>
+          </void>
+          <void property="name">
+           <string>sakila</string>
+          </void>
+         </object>
+        </void>
+        <void index="11">
+         <object class="zigen.plugin.db.core.SchemaInfo">
+          <void property="checked">
+           <boolean>true</boolean>
+          </void>
+          <void property="config">
+           <object idref="DBConfig0"/>
+          </void>
+          <void property="name">
+           <string>school</string>
+          </void>
+         </object>
+        </void>
+        <void index="12">
+         <object class="zigen.plugin.db.core.SchemaInfo">
+          <void property="checked">
+           <boolean>true</boolean>
+          </void>
+          <void property="config">
+           <object idref="DBConfig0"/>
+          </void>
+          <void property="name">
+           <string>sinsei</string>
+          </void>
+         </object>
+        </void>
+        <void index="13">
+         <object class="zigen.plugin.db.core.SchemaInfo">
+          <void property="checked">
+           <boolean>true</boolean>
+          </void>
+          <void property="config">
+           <object idref="DBConfig0"/>
+          </void>
+          <void property="name">
+           <string>test</string>
+          </void>
+         </object>
+        </void>
+        <void index="14">
+         <object class="zigen.plugin.db.core.SchemaInfo">
+          <void property="checked">
+           <boolean>true</boolean>
+          </void>
+          <void property="config">
+           <object idref="DBConfig0"/>
+          </void>
+          <void property="name">
+           <string>world</string>
+          </void>
+         </object>
+        </void>
+       </array>
+      </void>
+      <void property="driverName">
+       <string>com.mysql.jdbc.Driver</string>
+      </void>
+      <void property="driverVersion">
+       <string>mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )</string>
+      </void>
+      <void property="filterPattern">
+       <string></string>
+      </void>
+      <void property="noLockMode">
+       <boolean>true</boolean>
+      </void>
+      <void property="password">
+       <string>root</string>
+      </void>
+      <void property="schema">
+       <string></string>
+      </void>
+      <void property="url">
+       <string>jdbc:mysql://localhost:3306/</string>
+      </void>
+      <void property="userId">
+       <string>root</string>
+      </void>
+     </object>
+    </void>
+    <void property="date">
+     <object class="java.util.Date">
+      <long>1533773854475</long>
+     </object>
+    </void>
+    <void property="fileMode">
      <boolean>true</boolean>
     </void>
-    <void property="charset">
-     <string>utf-8</string>
-    </void>
-    <void property="classPaths">
-     <array class="java.lang.String" length="1">
-      <void index="0">
-       <string>C:\Program Files (x86)\MySQL\Connector.J 5.1\mysql-connector-java-5.1.35-bin.jar</string>
-      </void>
-     </array>
-    </void>
-    <void property="convertUnicode">
-     <boolean>true</boolean>
-    </void>
-    <void property="databaseProductVersion">
-     <string>5.6.25-log</string>
-    </void>
-    <void property="dbName">
-     <string>MySQL</string>
-    </void>
-    <void property="dbType">
-     <int>2</int>
-    </void>
-    <void property="displayedSchemas">
-     <array class="zigen.plugin.db.core.SchemaInfo" length="15">
-      <void index="0">
-       <object class="zigen.plugin.db.core.SchemaInfo">
-        <void property="checked">
-         <boolean>true</boolean>
-        </void>
-        <void property="config">
-         <object idref="DBConfig0"/>
-        </void>
-        <void property="name">
-         <string>information_schema</string>
-        </void>
-       </object>
-      </void>
-      <void index="1">
-       <object class="zigen.plugin.db.core.SchemaInfo">
-        <void property="checked">
-         <boolean>true</boolean>
-        </void>
-        <void property="config">
-         <object idref="DBConfig0"/>
-        </void>
-        <void property="name">
-         <string>company</string>
-        </void>
-       </object>
-      </void>
-      <void index="2">
-       <object class="zigen.plugin.db.core.SchemaInfo">
-        <void property="checked">
-         <boolean>true</boolean>
-        </void>
-        <void property="config">
-         <object idref="DBConfig0"/>
-        </void>
-        <void property="name">
-         <string>companydata</string>
-        </void>
-       </object>
-      </void>
-      <void index="3">
-       <object class="zigen.plugin.db.core.SchemaInfo">
-        <void property="checked">
-         <boolean>true</boolean>
-        </void>
-        <void property="config">
-         <object idref="DBConfig0"/>
-        </void>
-        <void property="name">
-         <string>hanbai</string>
-        </void>
-       </object>
-      </void>
-      <void index="4">
-       <object class="zigen.plugin.db.core.SchemaInfo">
-        <void property="checked">
-         <boolean>true</boolean>
-        </void>
-        <void property="config">
-         <object idref="DBConfig0"/>
-        </void>
-        <void property="name">
-         <string>list</string>
-        </void>
-       </object>
-      </void>
-      <void index="5">
-       <object class="zigen.plugin.db.core.SchemaInfo">
-        <void property="checked">
-         <boolean>true</boolean>
-        </void>
-        <void property="config">
-         <object idref="DBConfig0"/>
-        </void>
-        <void property="name">
-         <string>login</string>
-        </void>
-       </object>
-      </void>
-      <void index="6">
-       <object class="zigen.plugin.db.core.SchemaInfo">
-        <void property="checked">
-         <boolean>true</boolean>
-        </void>
-        <void property="config">
-         <object idref="DBConfig0"/>
-        </void>
-        <void property="name">
-         <string>mysql</string>
-        </void>
-       </object>
-      </void>
-      <void index="7">
-       <object class="zigen.plugin.db.core.SchemaInfo">
-        <void property="checked">
-         <boolean>true</boolean>
-        </void>
-        <void property="config">
-         <object idref="DBConfig0"/>
-        </void>
-        <void property="name">
-         <string>new_schema</string>
-        </void>
-       </object>
-      </void>
-      <void index="8">
-       <object class="zigen.plugin.db.core.SchemaInfo">
-        <void property="checked">
-         <boolean>true</boolean>
-        </void>
-        <void property="config">
-         <object idref="DBConfig0"/>
-        </void>
-        <void property="name">
-         <string>new_schema1</string>
-        </void>
-       </object>
-      </void>
-      <void index="9">
-       <object class="zigen.plugin.db.core.SchemaInfo">
-        <void property="checked">
-         <boolean>true</boolean>
-        </void>
-        <void property="config">
-         <object idref="DBConfig0"/>
-        </void>
-        <void property="name">
-         <string>performance_schema</string>
-        </void>
-       </object>
-      </void>
-      <void index="10">
-       <object class="zigen.plugin.db.core.SchemaInfo">
-        <void property="checked">
-         <boolean>true</boolean>
-        </void>
-        <void property="config">
-         <object idref="DBConfig0"/>
-        </void>
-        <void property="name">
-         <string>sakila</string>
-        </void>
-       </object>
-      </void>
-      <void index="11">
-       <object class="zigen.plugin.db.core.SchemaInfo">
-        <void property="checked">
-         <boolean>true</boolean>
-        </void>
-        <void property="config">
-         <object idref="DBConfig0"/>
-        </void>
-        <void property="name">
-         <string>school</string>
-        </void>
-       </object>
-      </void>
-      <void index="12">
-       <object class="zigen.plugin.db.core.SchemaInfo">
-        <void property="checked">
-         <boolean>true</boolean>
-        </void>
-        <void property="config">
-         <object idref="DBConfig0"/>
-        </void>
-        <void property="name">
-         <string>sinsei</string>
-        </void>
-       </object>
-      </void>
-      <void index="13">
-       <object class="zigen.plugin.db.core.SchemaInfo">
-        <void property="checked">
-         <boolean>true</boolean>
-        </void>
-        <void property="config">
-         <object idref="DBConfig0"/>
-        </void>
-        <void property="name">
-         <string>test</string>
-        </void>
-       </object>
-      </void>
-      <void index="14">
-       <object class="zigen.plugin.db.core.SchemaInfo">
-        <void property="checked">
-         <boolean>true</boolean>
-        </void>
-        <void property="config">
-         <object idref="DBConfig0"/>
-        </void>
-        <void property="name">
-         <string>world</string>
-        </void>
-       </object>
-      </void>
-     </array>
-    </void>
-    <void property="driverName">
-     <string>com.mysql.jdbc.Driver</string>
-    </void>
-    <void property="driverVersion">
-     <string>mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )</string>
-    </void>
-    <void property="filterPattern">
-     <string></string>
-    </void>
-    <void property="noLockMode">
-     <boolean>true</boolean>
-    </void>
-    <void property="password">
-     <string>root</string>
-    </void>
-    <void property="schema">
-     <string></string>
-    </void>
-    <void property="url">
-     <string>jdbc:mysql://localhost:3306/</string>
-    </void>
-    <void property="userId">
-     <string>root</string>
+    <void property="sql">
+     <string>USE SCHOOL;</string>
     </void>
    </object>
   </void>
-  <void property="fileMode">
-   <boolean>true</boolean>
+  <void method="add">
+   <object class="zigen.plugin.db.core.SQLHistory">
+    <void property="config">
+     <object idref="DBConfig0"/>
+    </void>
+    <void property="date">
+     <object class="java.util.Date">
+      <long>1533774674504</long>
+     </object>
+    </void>
+    <void property="fileMode">
+     <boolean>true</boolean>
+    </void>
+    <void property="sql">
+     <string>CREATE TABLE student(&#13;
+    id int PRIMARY KEY,&#13;
+    name varchar(128),&#13;
+    grade int&#13;
+);</string>
+    </void>
+   </object>
   </void>
-  <void property="sql">
-   <string>&#13;
+  <void method="add">
+   <object class="zigen.plugin.db.core.SQLHistory">
+    <void property="config">
+     <object idref="DBConfig0"/>
+    </void>
+    <void property="date">
+     <object class="java.util.Date">
+      <long>1533774771215</long>
+     </object>
+    </void>
+    <void property="fileMode">
+     <boolean>true</boolean>
+    </void>
+    <void property="sql">
+     <string>USE school;</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="zigen.plugin.db.core.SQLHistory">
+    <void property="config">
+     <object idref="DBConfig0"/>
+    </void>
+    <void property="date">
+     <object class="java.util.Date">
+      <long>1533774849228</long>
+     </object>
+    </void>
+    <void property="fileMode">
+     <boolean>true</boolean>
+    </void>
+    <void property="sql">
+     <string>use school;</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="zigen.plugin.db.core.SQLHistory">
+    <void property="config">
+     <object idref="DBConfig0"/>
+    </void>
+    <void property="date">
+     <object class="java.util.Date">
+      <long>1533774855016</long>
+     </object>
+    </void>
+    <void property="fileMode">
+     <boolean>true</boolean>
+    </void>
+    <void property="sql">
+     <string>INSERT INTO student (id, name, grade) VALUE(2001, &apos;太田隆&apos;, 2);&#13;
+INSERT INTO student (id, name, grade) ...</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="zigen.plugin.db.core.SQLHistory">
+    <void property="config">
+     <object idref="DBConfig0"/>
+    </void>
+    <void property="date">
+     <object class="java.util.Date">
+      <long>1533776457654</long>
+     </object>
+    </void>
+    <void property="fileMode">
+     <boolean>true</boolean>
+    </void>
+    <void property="sql">
+     <string>DROP DATABASE school;</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="zigen.plugin.db.core.SQLHistory">
+    <void property="config">
+     <object idref="DBConfig0"/>
+    </void>
+    <void property="date">
+     <object class="java.util.Date">
+      <long>1533776505182</long>
+     </object>
+    </void>
+    <void property="fileMode">
+     <boolean>true</boolean>
+    </void>
+    <void property="sql">
+     <string>/*繝�繝ｼ繧ｿ繝吶�ｼ繧ｹ縲�SCHOOL縲�繧剃ｽ懈�舌☆繧�*/&#13;
+CREATE DATABASE SCHOOL;&#13;
+&#13;
+/*  繝�繝ｼ繧ｿ繝吶�ｼ繧ｹ繧貞��繧頑崛縺医ｋ*/&#13;
+USE SC...</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="zigen.plugin.db.core.SQLHistory">
+    <void property="config">
+     <object idref="DBConfig0"/>
+    </void>
+    <void property="date">
+     <object class="java.util.Date">
+      <long>1533776791683</long>
+     </object>
+    </void>
+    <void property="fileMode">
+     <boolean>true</boolean>
+    </void>
+    <void property="sql">
+     <string>CREATE TABLE resource(&#13;
+    code char(6) PRIMARY KEY,&#13;
+    name varchar(40) NOT NULL,&#13;
+    class cha...</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="zigen.plugin.db.core.SQLHistory">
+    <void property="config">
+     <object idref="DBConfig0"/>
+    </void>
+    <void property="date">
+     <object class="java.util.Date">
+      <long>1533779679790</long>
+     </object>
+    </void>
+    <void property="fileMode">
+     <boolean>true</boolean>
+    </void>
+    <void property="sql">
+     <string>USE school;&#13;
+&#13;
+/* テーブルの生成 */&#13;
+CREATE TABLE resource(&#13;
+    code char(6) PRIMARY KEY,&#13;
+    name varcha...</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="zigen.plugin.db.core.SQLHistory">
+    <void property="config">
+     <object idref="DBConfig0"/>
+    </void>
+    <void property="date">
+     <object class="java.util.Date">
+      <long>1533779763144</long>
+     </object>
+    </void>
+    <void property="fileMode">
+     <boolean>true</boolean>
+    </void>
+    <void property="sql">
+     <string>USE school;&#13;
+&#13;
+/* テーブルの生成 */&#13;
+CREATE TABLE resource(&#13;
+    code char(6) PRIMARY KEY,&#13;
+    name varcha...</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="zigen.plugin.db.core.SQLHistory">
+    <void property="config">
+     <object idref="DBConfig0"/>
+    </void>
+    <void property="date">
+     <object class="java.util.Date">
+      <long>1533779804936</long>
+     </object>
+    </void>
+    <void property="fileMode">
+     <boolean>true</boolean>
+    </void>
+    <void property="sql">
+     <string>USE school;&#13;
+&#13;
+/* テーブルの生成 */&#13;
+CREATE TABLE resource(&#13;
+    code char(6) PRIMARY KEY,&#13;
+    name varcha...</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="zigen.plugin.db.core.SQLHistory">
+    <void property="config">
+     <object idref="DBConfig0"/>
+    </void>
+    <void property="date">
+     <object class="java.util.Date">
+      <long>1533779858778</long>
+     </object>
+    </void>
+    <void property="fileMode">
+     <boolean>true</boolean>
+    </void>
+    <void property="sql">
+     <string>USE school;&#13;
+&#13;
+/* テーブルの生成 */&#13;
+CREATE TABLE resource(&#13;
+    code char(6) PRIMARY KEY,&#13;
+    name varcha...</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="zigen.plugin.db.core.SQLHistory">
+    <void property="config">
+     <object class="zigen.plugin.db.core.DBConfig" id="DBConfig1">
+      <void property="autoCommit">
+       <boolean>true</boolean>
+      </void>
+      <void property="charset">
+       <string>utf-8</string>
+      </void>
+      <void property="classPaths">
+       <array class="java.lang.String" length="1">
+        <void index="0">
+         <string>C:\Program Files (x86)\MySQL\Connector.J 5.1\mysql-connector-java-5.1.35-bin.jar</string>
+        </void>
+       </array>
+      </void>
+      <void property="convertUnicode">
+       <boolean>true</boolean>
+      </void>
+      <void property="databaseProductVersion">
+       <string>5.6.25-log</string>
+      </void>
+      <void property="dbName">
+       <string>MySQL</string>
+      </void>
+      <void property="dbType">
+       <int>2</int>
+      </void>
+      <void property="displayedSchemas">
+       <array class="zigen.plugin.db.core.SchemaInfo" length="15">
+        <void index="0">
+         <object class="zigen.plugin.db.core.SchemaInfo">
+          <void property="checked">
+           <boolean>true</boolean>
+          </void>
+          <void property="config">
+           <object idref="DBConfig1"/>
+          </void>
+          <void property="name">
+           <string>information_schema</string>
+          </void>
+         </object>
+        </void>
+        <void index="1">
+         <object class="zigen.plugin.db.core.SchemaInfo">
+          <void property="checked">
+           <boolean>true</boolean>
+          </void>
+          <void property="config">
+           <object idref="DBConfig1"/>
+          </void>
+          <void property="name">
+           <string>company</string>
+          </void>
+         </object>
+        </void>
+        <void index="2">
+         <object class="zigen.plugin.db.core.SchemaInfo">
+          <void property="checked">
+           <boolean>true</boolean>
+          </void>
+          <void property="config">
+           <object idref="DBConfig1"/>
+          </void>
+          <void property="name">
+           <string>companydata</string>
+          </void>
+         </object>
+        </void>
+        <void index="3">
+         <object class="zigen.plugin.db.core.SchemaInfo">
+          <void property="checked">
+           <boolean>true</boolean>
+          </void>
+          <void property="config">
+           <object idref="DBConfig1"/>
+          </void>
+          <void property="name">
+           <string>hanbai</string>
+          </void>
+         </object>
+        </void>
+        <void index="4">
+         <object class="zigen.plugin.db.core.SchemaInfo">
+          <void property="checked">
+           <boolean>true</boolean>
+          </void>
+          <void property="config">
+           <object idref="DBConfig1"/>
+          </void>
+          <void property="name">
+           <string>list</string>
+          </void>
+         </object>
+        </void>
+        <void index="5">
+         <object class="zigen.plugin.db.core.SchemaInfo">
+          <void property="checked">
+           <boolean>true</boolean>
+          </void>
+          <void property="config">
+           <object idref="DBConfig1"/>
+          </void>
+          <void property="name">
+           <string>login</string>
+          </void>
+         </object>
+        </void>
+        <void index="6">
+         <object class="zigen.plugin.db.core.SchemaInfo">
+          <void property="checked">
+           <boolean>true</boolean>
+          </void>
+          <void property="config">
+           <object idref="DBConfig1"/>
+          </void>
+          <void property="name">
+           <string>mysql</string>
+          </void>
+         </object>
+        </void>
+        <void index="7">
+         <object class="zigen.plugin.db.core.SchemaInfo">
+          <void property="checked">
+           <boolean>true</boolean>
+          </void>
+          <void property="config">
+           <object idref="DBConfig1"/>
+          </void>
+          <void property="name">
+           <string>new_schema</string>
+          </void>
+         </object>
+        </void>
+        <void index="8">
+         <object class="zigen.plugin.db.core.SchemaInfo">
+          <void property="checked">
+           <boolean>true</boolean>
+          </void>
+          <void property="config">
+           <object idref="DBConfig1"/>
+          </void>
+          <void property="name">
+           <string>new_schema1</string>
+          </void>
+         </object>
+        </void>
+        <void index="9">
+         <object class="zigen.plugin.db.core.SchemaInfo">
+          <void property="checked">
+           <boolean>true</boolean>
+          </void>
+          <void property="config">
+           <object idref="DBConfig1"/>
+          </void>
+          <void property="name">
+           <string>performance_schema</string>
+          </void>
+         </object>
+        </void>
+        <void index="10">
+         <object class="zigen.plugin.db.core.SchemaInfo">
+          <void property="checked">
+           <boolean>true</boolean>
+          </void>
+          <void property="config">
+           <object idref="DBConfig1"/>
+          </void>
+          <void property="name">
+           <string>sakila</string>
+          </void>
+         </object>
+        </void>
+        <void index="11">
+         <object class="zigen.plugin.db.core.SchemaInfo">
+          <void property="checked">
+           <boolean>true</boolean>
+          </void>
+          <void property="config">
+           <object idref="DBConfig1"/>
+          </void>
+          <void property="name">
+           <string>school</string>
+          </void>
+         </object>
+        </void>
+        <void index="12">
+         <object class="zigen.plugin.db.core.SchemaInfo">
+          <void property="checked">
+           <boolean>true</boolean>
+          </void>
+          <void property="config">
+           <object idref="DBConfig1"/>
+          </void>
+          <void property="name">
+           <string>sinsei</string>
+          </void>
+         </object>
+        </void>
+        <void index="13">
+         <object class="zigen.plugin.db.core.SchemaInfo">
+          <void property="checked">
+           <boolean>true</boolean>
+          </void>
+          <void property="config">
+           <object idref="DBConfig1"/>
+          </void>
+          <void property="name">
+           <string>test</string>
+          </void>
+         </object>
+        </void>
+        <void index="14">
+         <object class="zigen.plugin.db.core.SchemaInfo">
+          <void property="checked">
+           <boolean>true</boolean>
+          </void>
+          <void property="config">
+           <object idref="DBConfig1"/>
+          </void>
+          <void property="name">
+           <string>world</string>
+          </void>
+         </object>
+        </void>
+       </array>
+      </void>
+      <void property="driverName">
+       <string>com.mysql.jdbc.Driver</string>
+      </void>
+      <void property="driverVersion">
+       <string>mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )</string>
+      </void>
+      <void property="filterPattern">
+       <string></string>
+      </void>
+      <void property="noLockMode">
+       <boolean>true</boolean>
+      </void>
+      <void property="password">
+       <string>root</string>
+      </void>
+      <void property="schema">
+       <string></string>
+      </void>
+      <void property="url">
+       <string>jdbc:mysql://localhost:3306/</string>
+      </void>
+      <void property="userId">
+       <string>root</string>
+      </void>
+     </object>
+    </void>
+    <void property="date">
+     <object class="java.util.Date">
+      <long>1533782559248</long>
+     </object>
+    </void>
+    <void property="fileMode">
+     <boolean>true</boolean>
+    </void>
+    <void property="sql">
+     <string>USE school;&#13;
+&#13;
+SELECT name, price FROM `resource` WHERE class=&apos;text&apos;;</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="zigen.plugin.db.core.SQLHistory">
+    <void property="config">
+     <object idref="DBConfig1"/>
+    </void>
+    <void property="date">
+     <object class="java.util.Date">
+      <long>1533782567662</long>
+     </object>
+    </void>
+    <void property="fileMode">
+     <boolean>true</boolean>
+    </void>
+    <void property="sql">
+     <string>USE school;&#13;
+&#13;
+SELECT name, price FROM `resource` WHERE price&gt;3000;</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="zigen.plugin.db.core.SQLHistory">
+    <void property="config">
+     <object idref="DBConfig1"/>
+    </void>
+    <void property="date">
+     <object class="java.util.Date">
+      <long>1533782575311</long>
+     </object>
+    </void>
+    <void property="fileMode">
+     <boolean>true</boolean>
+    </void>
+    <void property="sql">
+     <string>USE school;&#13;
+&#13;
+SELECT name, price FROM `resource` WHERE price&gt;1000;</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="zigen.plugin.db.core.SQLHistory">
+    <void property="config">
+     <object idref="DBConfig1"/>
+    </void>
+    <void property="date">
+     <object class="java.util.Date">
+      <long>1533782604859</long>
+     </object>
+    </void>
+    <void property="fileMode">
+     <boolean>true</boolean>
+    </void>
+    <void property="sql">
+     <string>USE school;&#13;
+&#13;
+SELECT name, price FROM `resource` WHERE price&gt;=3000 AND price&lt;5000;</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="zigen.plugin.db.core.SQLHistory">
+    <void property="config">
+     <object idref="DBConfig1"/>
+    </void>
+    <void property="date">
+     <object class="java.util.Date">
+      <long>1533782929076</long>
+     </object>
+    </void>
+    <void property="fileMode">
+     <boolean>true</boolean>
+    </void>
+    <void property="sql">
+     <string>USE school;&#13;
+&#13;
+SELECT name, price FROM `resource` WHERE price BETWEEN 2000 AND 5000;</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="zigen.plugin.db.core.SQLHistory">
+    <void property="config">
+     <object idref="DBConfig1"/>
+    </void>
+    <void property="date">
+     <object class="java.util.Date">
+      <long>1533783026711</long>
+     </object>
+    </void>
+    <void property="fileMode">
+     <boolean>true</boolean>
+    </void>
+    <void property="sql">
+     <string>USE school;&#13;
+&#13;
+SELECT name, price FROM `resource` WHERE price IN (&apos;sftw&apos;, &apos;pbbk&apos;);</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="zigen.plugin.db.core.SQLHistory">
+    <void property="config">
+     <object idref="DBConfig1"/>
+    </void>
+    <void property="date">
+     <object class="java.util.Date">
+      <long>1533783573561</long>
+     </object>
+    </void>
+    <void property="fileMode">
+     <boolean>true</boolean>
+    </void>
+    <void property="sql">
+     <string>USE school;&#13;
+&#13;
+/* テーブルの生成 */&#13;
+CREATE TABLE resource(&#13;
+    code char(6) PRIMARY KEY,&#13;
+    name varcha...</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="zigen.plugin.db.core.SQLHistory">
+    <void property="config">
+     <object idref="DBConfig1"/>
+    </void>
+    <void property="date">
+     <object class="java.util.Date">
+      <long>1533788717750</long>
+     </object>
+    </void>
+    <void property="fileMode">
+     <boolean>true</boolean>
+    </void>
+    <void property="sql">
+     <string>USE school;&#13;
+&#13;
+SELECT * FROM `resource` ORDER BY price ASC;</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="zigen.plugin.db.core.SQLHistory">
+    <void property="config">
+     <object idref="DBConfig1"/>
+    </void>
+    <void property="date">
+     <object class="java.util.Date">
+      <long>1533788734186</long>
+     </object>
+    </void>
+    <void property="fileMode">
+     <boolean>true</boolean>
+    </void>
+    <void property="sql">
+     <string>USE school;&#13;
+&#13;
+SELECT * FROM `resource` ORDER BY price DESC;</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="zigen.plugin.db.core.SQLHistory">
+    <void property="config">
+     <object idref="DBConfig1"/>
+    </void>
+    <void property="date">
+     <object class="java.util.Date">
+      <long>1533788740005</long>
+     </object>
+    </void>
+    <void property="fileMode">
+     <boolean>true</boolean>
+    </void>
+    <void property="sql">
+     <string>USE school;&#13;
+&#13;
+SELECT * FROM `resource` ORDER BY price ASC;</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="zigen.plugin.db.core.SQLHistory">
+    <void property="config">
+     <object idref="DBConfig1"/>
+    </void>
+    <void property="date">
+     <object class="java.util.Date">
+      <long>1533788749245</long>
+     </object>
+    </void>
+    <void property="fileMode">
+     <boolean>true</boolean>
+    </void>
+    <void property="sql">
+     <string>USE school;&#13;
+&#13;
+SELECT * FROM `resource` ORDER BY code ASC;</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="zigen.plugin.db.core.SQLHistory">
+    <void property="config">
+     <object idref="DBConfig1"/>
+    </void>
+    <void property="date">
+     <object class="java.util.Date">
+      <long>1533789683375</long>
+     </object>
+    </void>
+    <void property="fileMode">
+     <boolean>true</boolean>
+    </void>
+    <void property="sql">
+     <string>USE school;&#13;
+&#13;
+CREATE TABLE score(&#13;
+    id INT NOT NULL,&#13;
+    math INT NOT NULL,&#13;
+    english INT NO...</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="zigen.plugin.db.core.SQLHistory">
+    <void property="config">
+     <object idref="DBConfig1"/>
+    </void>
+    <void property="date">
+     <object class="java.util.Date">
+      <long>1533789714191</long>
+     </object>
+    </void>
+    <void property="fileMode">
+     <boolean>true</boolean>
+    </void>
+    <void property="sql">
+     <string>USE school;&#13;
+&#13;
+select * from score;</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="zigen.plugin.db.core.SQLHistory">
+    <void property="config">
+     <object idref="DBConfig1"/>
+    </void>
+    <void property="date">
+     <object class="java.util.Date">
+      <long>1533790029010</long>
+     </object>
+    </void>
+    <void property="fileMode">
+     <boolean>true</boolean>
+    </void>
+    <void property="sql">
+     <string>USE school;&#13;
+&#13;
+INSERT INTO score (id, math, english, science) VALUE(1001, 90, 80, 98);&#13;
+INSERT INTO ...</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="zigen.plugin.db.core.SQLHistory">
+    <void property="config">
+     <object idref="DBConfig1"/>
+    </void>
+    <void property="date">
+     <object class="java.util.Date">
+      <long>1533790190746</long>
+     </object>
+    </void>
+    <void property="fileMode">
+     <boolean>true</boolean>
+    </void>
+    <void property="sql">
+     <string>USE school;&#13;
+&#13;
+SELECT * FROM score ORDER BY math DESC, english ASC;&#13;
+&#13;
+select * from score;</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="zigen.plugin.db.core.SQLHistory">
+    <void property="config">
+     <object idref="DBConfig1"/>
+    </void>
+    <void property="date">
+     <object class="java.util.Date">
+      <long>1533790289923</long>
+     </object>
+    </void>
+    <void property="fileMode">
+     <boolean>true</boolean>
+    </void>
+    <void property="sql">
+     <string>USE school;&#13;
+&#13;
+SELECT * FROM score ORDER BY science ASC, english DESC;&#13;
+&#13;
+select * from score;</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="zigen.plugin.db.core.SQLHistory">
+    <void property="config">
+     <object idref="DBConfig1"/>
+    </void>
+    <void property="date">
+     <object class="java.util.Date">
+      <long>1533790467937</long>
+     </object>
+    </void>
+    <void property="fileMode">
+     <boolean>true</boolean>
+    </void>
+    <void property="sql">
+     <string>USE school;&#13;
+&#13;
+/*&#13;
+テーブルscoreを作る&#13;
+*/&#13;
+CREATE TABLE score(&#13;
+    id INT NOT NULL,&#13;
+    math INT NOT NUL...</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="zigen.plugin.db.core.SQLHistory">
+    <void property="config">
+     <object idref="DBConfig1"/>
+    </void>
+    <void property="date">
+     <object class="java.util.Date">
+      <long>1533790479141</long>
+     </object>
+    </void>
+    <void property="fileMode">
+     <boolean>true</boolean>
+    </void>
+    <void property="sql">
+     <string>USE school;&#13;
+&#13;
+SELECT * FROM score ORDER BY science ASC, english DESC;&#13;
+&#13;
+select * from score;</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="zigen.plugin.db.core.SQLHistory">
+    <void property="config">
+     <object idref="DBConfig1"/>
+    </void>
+    <void property="date">
+     <object class="java.util.Date">
+      <long>1533790662946</long>
+     </object>
+    </void>
+    <void property="fileMode">
+     <boolean>true</boolean>
+    </void>
+    <void property="sql">
+     <string>USE school;&#13;
+&#13;
+SELECT * FROM score ORDER BY science ASC, english DESC;&#13;
+&#13;
+</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="zigen.plugin.db.core.SQLHistory">
+    <void property="config">
+     <object idref="DBConfig1"/>
+    </void>
+    <void property="date">
+     <object class="java.util.Date">
+      <long>1533792130532</long>
+     </object>
+    </void>
+    <void property="fileMode">
+     <boolean>true</boolean>
+    </void>
+    <void property="sql">
+     <string>USE school;&#13;
+&#13;
+SELECT class, AVG(price) FROM `resource` GROUP BY class;</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="zigen.plugin.db.core.SQLHistory">
+    <void property="config">
+     <object idref="DBConfig1"/>
+    </void>
+    <void property="date">
+     <object class="java.util.Date">
+      <long>1533794052844</long>
+     </object>
+    </void>
+    <void property="fileMode">
+     <boolean>true</boolean>
+    </void>
+    <void property="sql">
+     <string>USE school;&#13;
+&#13;
+INSERT INTO class_name (class, name) VALUE(&apos;text&apos;,&apos;教科書&apos;);&#13;
+INSERT INTO class_name (cl...</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="zigen.plugin.db.core.SQLHistory">
+    <void property="config">
+     <object idref="DBConfig1"/>
+    </void>
+    <void property="date">
+     <object class="java.util.Date">
+      <long>1533794201561</long>
+     </object>
+    </void>
+    <void property="fileMode">
+     <boolean>true</boolean>
+    </void>
+    <void property="sql">
+     <string>USE school;&#13;
+&#13;
+SELECT * FROM `resource` INNER JOIN class_name ON resource.class = class_name.class;</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="zigen.plugin.db.core.SQLHistory">
+    <void property="config">
+     <object idref="DBConfig1"/>
+    </void>
+    <void property="date">
+     <object class="java.util.Date">
+      <long>1533797205438</long>
+     </object>
+    </void>
+    <void property="fileMode">
+     <boolean>true</boolean>
+    </void>
+    <void property="sql">
+     <string>USE school;&#13;
+&#13;
+INSERT INTO purchase_history(date, code, num) VALUE(&apos;2013/1/13&apos;, &apos;100001&apos;, 100);&#13;
+INS...</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="zigen.plugin.db.core.SQLHistory">
+    <void property="config">
+     <object idref="DBConfig1"/>
+    </void>
+    <void property="date">
+     <object class="java.util.Date">
+      <long>1533797548821</long>
+     </object>
+    </void>
+    <void property="fileMode">
+     <boolean>true</boolean>
+    </void>
+    <void property="sql">
+     <string>USE school;&#13;
+&#13;
+SELECT * FROM purchase_history LEFT OUTER JOIN resource ON purchase_history.code = re...</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="zigen.plugin.db.core.SQLHistory">
+    <void property="config">
+     <object idref="DBConfig1"/>
+    </void>
+    <void property="date">
+     <object class="java.util.Date">
+      <long>1533800932413</long>
+     </object>
+    </void>
+    <void property="fileMode">
+     <boolean>true</boolean>
+    </void>
+    <void property="sql">
+     <string>USE school;&#13;
+&#13;
+SELECT date, code, resource.name, class_name.name, num, price &#13;
+FROM purchase_history...</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="zigen.plugin.db.core.SQLHistory">
+    <void property="config">
+     <object idref="DBConfig1"/>
+    </void>
+    <void property="date">
+     <object class="java.util.Date">
+      <long>1533801526938</long>
+     </object>
+    </void>
+    <void property="fileMode">
+     <boolean>true</boolean>
+    </void>
+    <void property="sql">
+     <string>DROP DATABASE test;</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="zigen.plugin.db.core.SQLHistory">
+    <void property="config">
+     <object idref="DBConfig1"/>
+    </void>
+    <void property="date">
+     <object class="java.util.Date">
+      <long>1533801671664</long>
+     </object>
+    </void>
+    <void property="fileMode">
+     <boolean>true</boolean>
+    </void>
+    <void property="sql">
+     <string>CREATE DATABASE test;&#13;
+&#13;
+USE test;&#13;
+&#13;
+CREATE TABLE tempTbl(&#13;
+    TO_USERID VARCHAR(10),&#13;
+    TO_PASS...</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="zigen.plugin.db.core.SQLHistory">
+    <void property="config">
+     <object idref="DBConfig1"/>
+    </void>
+    <void property="date">
+     <object class="java.util.Date">
+      <long>1533801932011</long>
+     </object>
+    </void>
+    <void property="fileMode">
+     <boolean>true</boolean>
+    </void>
+    <void property="sql">
+     <string>&#13;
+&#13;
+USE test;&#13;
+&#13;
+ALTER TABLE tempTbl CHANGE TO_TEL TO_TELEPHONE VARCHAR(11);</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="zigen.plugin.db.core.SQLHistory">
+    <void property="config">
+     <object idref="DBConfig1"/>
+    </void>
+    <void property="date">
+     <object class="java.util.Date">
+      <long>1533802222330</long>
+     </object>
+    </void>
+    <void property="fileMode">
+     <boolean>true</boolean>
+    </void>
+    <void property="sql">
+     <string>&#13;
+&#13;
+USE test;&#13;
+&#13;
+INSERT INTO tempTbl(&#13;
+    TO_USERID,&#13;
+    TO_PASSWORD,&#13;
+    TO_TELEPHONE,&#13;
+    TO_B...</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="zigen.plugin.db.core.SQLHistory">
+    <void property="config">
+     <object idref="DBConfig1"/>
+    </void>
+    <void property="date">
+     <object class="java.util.Date">
+      <long>1533803066555</long>
+     </object>
+    </void>
+    <void property="fileMode">
+     <boolean>true</boolean>
+    </void>
+    <void property="sql">
+     <string>&#13;
+&#13;
+USE test;&#13;
+&#13;
+INSERT INTO tempTbl VALUE(&apos;user02&apos;, &apos;user02&apos;, &apos;08022345678&apos;, &apos;19871011&apos;, &apos;大阪市浪速区&apos;, ...</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="zigen.plugin.db.core.SQLHistory">
+    <void property="config">
+     <object idref="DBConfig1"/>
+    </void>
+    <void property="date">
+     <object class="java.util.Date">
+      <long>1533803393082</long>
+     </object>
+    </void>
+    <void property="fileMode">
+     <boolean>true</boolean>
+    </void>
+    <void property="sql">
+     <string>&#13;
+&#13;
+USE test;&#13;
+&#13;
+SELECT TO_USERID, TO_BIRTHDAY, TO_ADDRESS, TO_TOROKUBI FROM temptbl WHERE TO_TOROKU...</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="zigen.plugin.db.core.SQLHistory">
+    <void property="config">
+     <object idref="DBConfig1"/>
+    </void>
+    <void property="date">
+     <object class="java.util.Date">
+      <long>1533803618465</long>
+     </object>
+    </void>
+    <void property="fileMode">
+     <boolean>true</boolean>
+    </void>
+    <void property="sql">
+     <string>&#13;
+&#13;
+USE test;&#13;
+&#13;
+UPDATE tempTbl SET TO_TOROKUBI=&apos;20180809&apos; WHERE TO_USERID=&apos;user01&apos;;</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="zigen.plugin.db.core.SQLHistory">
+    <void property="config">
+     <object idref="DBConfig1"/>
+    </void>
+    <void property="date">
+     <object class="java.util.Date">
+      <long>1533803655563</long>
+     </object>
+    </void>
+    <void property="fileMode">
+     <boolean>true</boolean>
+    </void>
+    <void property="sql">
+     <string>&#13;
+&#13;
+USE test;&#13;
+&#13;
+UPDATE tempTbl SET TO_TOROKUBI=&apos;20180809&apos; WHERE TO_USERID=&apos;user02&apos;;</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="zigen.plugin.db.core.SQLHistory">
+    <void property="config">
+     <object idref="DBConfig1"/>
+    </void>
+    <void property="date">
+     <object class="java.util.Date">
+      <long>1533803957650</long>
+     </object>
+    </void>
+    <void property="fileMode">
+     <boolean>true</boolean>
+    </void>
+    <void property="sql">
+     <string>&#13;
+&#13;
+USE test;&#13;
+&#13;
+SELECT TO_TOROKUBI FROM temptbl GROUP BY TO_TOROKUBI HAVING COUNT(TO_TOROKUBI) = &apos;2...</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="zigen.plugin.db.core.SQLHistory">
+    <void property="config">
+     <object idref="DBConfig1"/>
+    </void>
+    <void property="date">
+     <object class="java.util.Date">
+      <long>1533803968289</long>
+     </object>
+    </void>
+    <void property="fileMode">
+     <boolean>true</boolean>
+    </void>
+    <void property="sql">
+     <string>&#13;
+&#13;
+USE test;&#13;
+&#13;
+SELECT TO_TOROKUBI FROM temptbl GROUP BY TO_TOROKUBI HAVING COUNT(TO_TOROKUBI) = 20...</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="zigen.plugin.db.core.SQLHistory">
+    <void property="config">
+     <object idref="DBConfig1"/>
+    </void>
+    <void property="date">
+     <object class="java.util.Date">
+      <long>1533804085578</long>
+     </object>
+    </void>
+    <void property="fileMode">
+     <boolean>true</boolean>
+    </void>
+    <void property="sql">
+     <string>&#13;
+&#13;
+USE test;&#13;
+&#13;
+SELECT TO_TOROKUBI FROM temptbl GROUP BY TO_TOROKUBI HAVING COUNT(TO_TOROKUBI)=2015...</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="zigen.plugin.db.core.SQLHistory">
+    <void property="config">
+     <object idref="DBConfig1"/>
+    </void>
+    <void property="date">
+     <object class="java.util.Date">
+      <long>1533806086132</long>
+     </object>
+    </void>
+    <void property="fileMode">
+     <boolean>true</boolean>
+    </void>
+    <void property="sql">
+     <string>&#13;
+&#13;
+USE test;&#13;
+&#13;
+SELECT COUNT(TO_TOROKUBI) FROM temptbl GROUP BY TO_TOROKUBI HAVING TO_TOROKUBI=2015...</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="zigen.plugin.db.core.SQLHistory">
+    <void property="config">
+     <object idref="DBConfig1"/>
+    </void>
+    <void property="date">
+     <object class="java.util.Date">
+      <long>1533806128654</long>
+     </object>
+    </void>
+    <void property="fileMode">
+     <boolean>true</boolean>
+    </void>
+    <void property="sql">
+     <string>&#13;
 &#13;
 USE test;&#13;
 &#13;
 DELETE  FROM temptbl WHERE TO_TOROKUBI=&apos;20150903&apos;;</string>
+    </void>
+   </object>
   </void>
  </object>
 </java>

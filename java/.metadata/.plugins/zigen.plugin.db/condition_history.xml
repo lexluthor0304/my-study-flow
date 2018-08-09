@@ -19,6 +19,57 @@
    </object>
   </void>
   <void method="put">
+   <string>jdbc:mysql://localhost:3306/.school.score</string>
+   <object class="zigen.plugin.db.core.Condition">
+    <void property="conditions">
+     <object class="java.util.ArrayList"/>
+    </void>
+    <void property="connectionUrl">
+     <string>jdbc:mysql://localhost:3306/</string>
+    </void>
+    <void property="schema">
+     <string>school</string>
+    </void>
+    <void property="table">
+     <string>score</string>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>jdbc:mysql://localhost:3306/.school.class_name</string>
+   <object class="zigen.plugin.db.core.Condition">
+    <void property="conditions">
+     <object class="java.util.ArrayList"/>
+    </void>
+    <void property="connectionUrl">
+     <string>jdbc:mysql://localhost:3306/</string>
+    </void>
+    <void property="schema">
+     <string>school</string>
+    </void>
+    <void property="table">
+     <string>class_name</string>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>jdbc:mysql://localhost:3306/.test.temptbl</string>
+   <object class="zigen.plugin.db.core.Condition">
+    <void property="conditions">
+     <object class="java.util.ArrayList"/>
+    </void>
+    <void property="connectionUrl">
+     <string>jdbc:mysql://localhost:3306/</string>
+    </void>
+    <void property="schema">
+     <string>test</string>
+    </void>
+    <void property="table">
+     <string>temptbl</string>
+    </void>
+   </object>
+  </void>
+  <void method="put">
    <string>jdbc:mysql://localhost:3306/.school.student</string>
    <object class="zigen.plugin.db.core.Condition">
     <void property="conditions">
@@ -32,6 +83,23 @@
     </void>
     <void property="table">
      <string>student</string>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>jdbc:mysql://localhost:3306/.school.purchase_history</string>
+   <object class="zigen.plugin.db.core.Condition">
+    <void property="conditions">
+     <object class="java.util.ArrayList"/>
+    </void>
+    <void property="connectionUrl">
+     <string>jdbc:mysql://localhost:3306/</string>
+    </void>
+    <void property="schema">
+     <string>school</string>
+    </void>
+    <void property="table">
+     <string>purchase_history</string>
     </void>
    </object>
   </void>

@@ -9968,3 +9968,15 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Incorrect database na
 	at zigen.plugin.db.ui.jobs.AbstractLoadColumnJob.loadColumnInfo(AbstractLoadColumnJob.java:153)
 	at zigen.plugin.db.ui.editors.TableViewEditorFor31$LoadingColumnInfoJob.run(TableViewEditorFor31.java:1456)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.salesforce.ide.core 2 0 2018-08-09 18:23:49.067
+!MESSAGE  WARN [2018-08-09 18:23:41,902] (ConnectionFactory.java:clearCache:217) - No cached connections
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-08-09 18:23:49.083
+!MESSAGE  WARN [2018-08-09 18:23:49,083] (DescribeObjectRegistry.java:clearCache:660) - No cached describes
+
+
+!ENTRY com.salesforce.ide.core 2 0 2018-08-09 18:23:49.099
+!MESSAGE  WARN [2018-08-09 18:23:49,083] (MetadataFactory.java:clearCache:125) - No cached metadata stubs
+
