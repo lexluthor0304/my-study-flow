@@ -255,17 +255,18 @@
   </void>
   <void property="date">
    <object class="java.util.Date">
-    <long>1533800932413</long>
+    <long>1533804085578</long>
    </object>
   </void>
   <void property="fileMode">
    <boolean>true</boolean>
   </void>
   <void property="sql">
-   <string>USE school;&#13;
+   <string>&#13;
 &#13;
-SELECT date, code, resource.name, class_name.name, num, price &#13;
-FROM purchase_history...</string>
+USE test;&#13;
+&#13;
+SELECT TO_TOROKUBI FROM temptbl GROUP BY TO_TOROKUBI HAVING COUNT(TO_TOROKUBI)=2015...</string>
   </void>
  </object>
 </java>

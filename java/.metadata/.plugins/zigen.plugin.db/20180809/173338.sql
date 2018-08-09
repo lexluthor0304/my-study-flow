@@ -1,0 +1,5 @@
+
+
+USE test;
+
+UPDATE tempTbl SET TO_TOROKUBI='20180809' WHERE TO_USERID='user01';

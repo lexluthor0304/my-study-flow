@@ -197,3 +197,8 @@ UPDATE テーブル名 SET 列名1 = 値1, 列名2 = 値2, …WHERE [条件];
 
 UPDATE resource SET price = price + 10 WHERE class='text';
 
+/*
+データ型を変更
+*/
+
+ALTER TABLE tempTbl CHANGE TO_TEL TO_TELEPHONE VARCHAR(11);
