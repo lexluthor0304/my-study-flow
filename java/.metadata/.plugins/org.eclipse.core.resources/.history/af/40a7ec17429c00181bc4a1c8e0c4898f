@@ -1,0 +1,13 @@
+package helloWorld;
+
+public class Var_Cast {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int integer = 3.1415926;
+		double db1 = 3.1415926;
+		int integer = (int)db1;
+		System.out.print(1 + db1);
+	}
+
+}

@@ -1,0 +1,15 @@
+package helloWorld;
+
+
+public class Learning_while {
+
+	public static void main(String[] args) {
+		// TODO 自動生成されたメソッド・スタブ
+		String i = "0.7";
+		while (i < 5) {
+			System.out.println("i = " + i);
+			i++;
+		}
+	}
+
+}

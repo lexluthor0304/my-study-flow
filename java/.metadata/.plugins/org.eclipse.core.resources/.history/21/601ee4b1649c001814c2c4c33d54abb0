@@ -1,0 +1,15 @@
+package helloWorld;
+
+public class Learing_for4 {
+
+	public static void main(String[] args) {
+		// TODO 自動生成されたメソッド・スタブ
+		for (int i = 0; i < 2; i++){
+			System.out.println(i);
+			//for (int j = 0; j < 2; j++){
+				//System.out.println("i = " + i + ",j=" + j);
+			}
+		}
+	}
+
+//}
