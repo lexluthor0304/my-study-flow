@@ -1,0 +1,20 @@
+package helloWorld;
+
+public class Learning_break {
+
+	public static void main(String[] args) {
+		// TODO 自動生成されたメソッド・スタブ
+		outside: for (int i = 1; i <100; i++) {
+			System.out.println("一番外のi： " + i);
+			for (int j = 1; j < 100; j++) {
+				System.out.println("二番目のj： " + j);
+				if (i * j > 100) {
+					break outside;
+				}
+				System.out.println(i + "*" + j + "=" + (i*j));
+			}
+
+		}
+	}
+
+}
