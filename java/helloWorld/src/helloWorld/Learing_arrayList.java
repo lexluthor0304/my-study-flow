@@ -1,0 +1,16 @@
+package helloWorld;
+
+public class Learing_arrayList {
+
+	public static void main(String[] args) {
+		// TODO 自動生成されたメソッド・スタブ
+		char[] moji; // 配列宣言
+		moji = new char[2]; // 初期化し、配列のサイズを指定する
+		moji[0] = 'A';
+		moji[1] = '漢';
+		for(int i = 0; i < 2; i++){
+			System.out.println(moji[i]);
+		}
+	}
+
+}

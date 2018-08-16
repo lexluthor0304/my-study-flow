@@ -1,0 +1,11 @@
+package helloWorld;
+
+public class Trim {
+
+	public static void main(String[] args) {
+		// TODO 自動生成されたメソッド・スタブ
+		String str1 = "  Good Morning   ";
+		System.out.println("元の文字列 「" + str1 + "」");
+	}
+
+}

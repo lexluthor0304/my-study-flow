@@ -5,9 +5,9 @@ public class Learning_break {
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
 		outside: for (int i = 1; i < 10; i++) {
-			//System.out.println("一番外のi： " + i);
+			System.out.println("一番外のi： " + i);
 			for (int j = 1; j < 10; j++) {
-				//System.out.println("二番目のj： " + j);
+				System.out.println("二番目のj： " + j);
 				if (i * j > 82) {
 					break outside;
 				}

@@ -1,0 +1,10 @@
+package helloWorld;
+
+public class Upper_and_Lower {
+
+	public static void main(String[] args) {
+		// TODO 自動生成されたメソッド・スタブ
+
+	}
+
+}

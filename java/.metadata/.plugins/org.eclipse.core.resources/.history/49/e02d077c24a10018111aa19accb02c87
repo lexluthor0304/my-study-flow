@@ -1,0 +1,12 @@
+package helloWorld;
+
+public class Upper_and_Lower {
+
+	public static void main(String[] args) {
+		// TODO 自動生成されたメソッド・スタブ
+		String str1 = "Good Morning";
+		String upper_str1 = str1.toUpperCase();
+		System.out.println("元の文字列 :" + str1);
+	}
+
+}
