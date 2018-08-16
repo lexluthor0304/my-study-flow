@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<runner version="1.0.0">
+<category name="カテゴリーなし">
+<launchConfiguration bookmark="false" name="HelloWorld"/>
+<launchConfiguration bookmark="false" name="Hensu"/>
+<launchConfiguration bookmark="false" name="Leaning_if"/>
+<launchConfiguration bookmark="false" name="Learing_arrayList"/>
+<launchConfiguration bookmark="false" name="Learing_arrayList1"/>
+<launchConfiguration bookmark="false" name="Learing_doWhile"/>
+<launchConfiguration bookmark="false" name="Learing_for4"/>
+<launchConfiguration bookmark="false" name="Learning_arrayList3"/>
+<launchConfiguration bookmark="false" name="Learning_arrayList4"/>
+<launchConfiguration bookmark="false" name="Learning_arryList2"/>
+<launchConfiguration bookmark="false" name="Learning_break"/>
+<launchConfiguration bookmark="false" name="Learning_charAt"/>
+<launchConfiguration bookmark="false" name="Learning_for"/>
+<launchConfiguration bookmark="false" name="Learning_for1"/>
+<launchConfiguration bookmark="false" name="Learning_for3"/>
+<launchConfiguration bookmark="false" name="Learning_if_2"/>
+<launchConfiguration bookmark="false" name="Learning_length"/>
+<launchConfiguration bookmark="false" name="Learning_str"/>
+<launchConfiguration bookmark="false" name="Learning_str1"/>
+<launchConfiguration bookmark="false" name="Learning_swith"/>
+<launchConfiguration bookmark="false" name="Learning_while"/>
+<launchConfiguration bookmark="false" name="Learnning_for2"/>
+<launchConfiguration bookmark="false" name="Mthod"/>
+<launchConfiguration bookmark="false" name="Mthod1"/>
+<launchConfiguration bookmark="false" name="Mthod_test"/>
+<launchConfiguration bookmark="false" name="ReplaceFirst"/>
+<launchConfiguration bookmark="false" name="ScopeExample"/>
+<launchConfiguration bookmark="false" name="Split"/>
+<launchConfiguration bookmark="false" name="Substring"/>
+<launchConfiguration bookmark="false" name="Test"/>
+<launchConfiguration bookmark="false" name="Trim"/>
+<launchConfiguration bookmark="false" name="Upper_and_Lower"/>
+<launchConfiguration bookmark="false" name="Var_Cast"/>
+</category>
+</runner>
