@@ -1,0 +1,17 @@
+package files;
+
+import java.io.File;
+
+public class GetFilePath {
+
+	public static void main(String args[]) {
+		// TODO 自動生成されたメソッド・スタブ
+		File cdirectory = new File("C:\\");
+
+		String filePath[] = cdirectory.getAbsolutePath();
+		for (int i = 0; i < filePath.length; i++) {
+			System.out.println(filePath[i]);
+		}
+	}
+
+}
