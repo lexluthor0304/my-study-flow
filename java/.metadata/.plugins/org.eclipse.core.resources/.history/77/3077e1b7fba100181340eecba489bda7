@@ -1,0 +1,13 @@
+package files;
+
+import java.io.File;
+
+public class File_test {
+
+	public static void main(String[] args) {
+		// TODO 自動生成されたメソッド・スタブ
+		File cdirectory = new File("C:\\");
+
+	}
+
+}
