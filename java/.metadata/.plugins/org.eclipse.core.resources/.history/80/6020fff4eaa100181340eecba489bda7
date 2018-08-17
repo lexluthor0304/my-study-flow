@@ -1,0 +1,11 @@
+package televison;
+
+public class Sample0817 {
+	public static void main(Srting[] args) {
+		Child0817 child = new Child0817();
+		System.out.println(child.ps1);
+		System.out.println(child.cs1);
+		child.pm();
+		child.cm();
+	}
+}

@@ -1,0 +1,11 @@
+package class_study;
+
+public class Television_class {
+
+	public static void main(String[] args) {
+		// TODO 自動生成されたメソッド・スタブ
+		Television tv = new Television();
+		
+	}
+
+}

@@ -1,0 +1,11 @@
+package televison;
+
+public class ColTV extends TV {
+
+	String col;
+	
+	void setCol(String newCol){
+		
+	}
+
+}
