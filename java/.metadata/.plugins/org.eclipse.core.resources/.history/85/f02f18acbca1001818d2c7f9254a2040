@@ -1,0 +1,22 @@
+package helloWorld;
+
+public class Mthod4 {
+
+	public static void main(String[] args) {
+		// TODO 自動生成されたメソッド・スタブ
+		int num = 9;
+		String kekka;
+		num = 9;
+		kekka = hantei(num);
+	}
+
+	private static String hantei(int n) {
+		// TODO 自動生成されたメソッド・スタブ
+		if (n % 2 == 0) {
+			return "偶数";
+		}else {
+			return "奇数";
+		}
+	}
+
+}
