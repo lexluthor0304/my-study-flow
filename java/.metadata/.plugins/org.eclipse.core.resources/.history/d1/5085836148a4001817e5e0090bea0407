@@ -1,0 +1,39 @@
+package files;
+
+import java.io.File;
+import java.io.FileWriter;
+
+public class MyFileReader2 {
+
+	public static void main(String[] args) {
+		// TODO 自動生成されたメソッド・スタブ
+		try {
+			File file = new File("c:/Users/liu/Desktop/test.txt");
+			if (checkBeforeWritefile(file)) {
+				FileWriter fileWriter = new FileWriter(file);
+
+				fileWriter.write("こんにちは！\r\n");
+				fileWriter.write("お元気ですか?\r\n");
+
+				fileWriter.close();
+			}else {
+				System.out.println("ファイルに書き込めません");
+			}
+
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.out.println(e);
+		}
+	}
+
+	private static boolean checkBeforeWritefile(File file) {
+		// TODO 自動生成されたメソッド・スタブ
+		if (file.exists()) {
+			if (file.isFile()&&file.canWrite()) {
+				return true;
+			}
+		}
+		return false;
+	}
+
+}

@@ -1,0 +1,28 @@
+package files;
+
+import java.io.File;
+import java.io.IOException;
+
+
+
+public class MyFileReader3 {
+
+	public static void main(String[] args) {
+		// TODO 自動生成されたメソッド・スタブ
+		try {
+			File file = new File("c:/Users/liu/Desktop/test.txt");
+
+			if (checkBeforeWritefile(file)) {
+
+			}
+		} catch (IOException e) {
+			// TODO: handle exception
+		}
+	}
+
+	private static boolean checkBeforeWritefile(File file) {
+		// TODO 自動生成されたメソッド・スタブ
+		return false;
+	}
+
+}

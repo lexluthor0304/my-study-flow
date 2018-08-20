@@ -1,0 +1,18 @@
+package files;
+
+import java.io.FileNotFoundException;
+
+public class FileReader {
+
+	public static void main(String[] args) {
+		// TODO 自動生成されたメソッド・スタブ
+		try {
+
+		} catch (FileNotFoundException e) {
+			// TODO: handle exception
+		} catch (IOException e) {
+			// TODO: handle exception
+		}
+	}
+
+}
