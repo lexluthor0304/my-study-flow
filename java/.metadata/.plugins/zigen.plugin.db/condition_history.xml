@@ -2,6 +2,23 @@
 <java version="1.8.0_40" class="java.beans.XMLDecoder">
  <object class="java.util.HashMap">
   <void method="put">
+   <string>jdbc:mysql://localhost:3306/.companydata.country</string>
+   <object class="zigen.plugin.db.core.Condition">
+    <void property="conditions">
+     <object class="java.util.ArrayList"/>
+    </void>
+    <void property="connectionUrl">
+     <string>jdbc:mysql://localhost:3306/</string>
+    </void>
+    <void property="schema">
+     <string>companydata</string>
+    </void>
+    <void property="table">
+     <string>country</string>
+    </void>
+   </object>
+  </void>
+  <void method="put">
    <string>jdbc:mysql://localhost:3306/.school.resource</string>
    <object class="zigen.plugin.db.core.Condition">
     <void property="conditions">
@@ -32,6 +49,23 @@
     </void>
     <void property="table">
      <string>score</string>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>jdbc:mysql://localhost:3306/.companydata.empinfo</string>
+   <object class="zigen.plugin.db.core.Condition">
+    <void property="conditions">
+     <object class="java.util.ArrayList"/>
+    </void>
+    <void property="connectionUrl">
+     <string>jdbc:mysql://localhost:3306/</string>
+    </void>
+    <void property="schema">
+     <string>companydata</string>
+    </void>
+    <void property="table">
+     <string>empinfo</string>
     </void>
    </object>
   </void>
@@ -70,6 +104,23 @@
    </object>
   </void>
   <void method="put">
+   <string>jdbc:mysql://localhost:3306/.companydata.sex</string>
+   <object class="zigen.plugin.db.core.Condition">
+    <void property="conditions">
+     <object class="java.util.ArrayList"/>
+    </void>
+    <void property="connectionUrl">
+     <string>jdbc:mysql://localhost:3306/</string>
+    </void>
+    <void property="schema">
+     <string>companydata</string>
+    </void>
+    <void property="table">
+     <string>sex</string>
+    </void>
+   </object>
+  </void>
+  <void method="put">
    <string>jdbc:mysql://localhost:3306/.school.student</string>
    <object class="zigen.plugin.db.core.Condition">
     <void property="conditions">
@@ -100,6 +151,23 @@
     </void>
     <void property="table">
      <string>purchase_history</string>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>jdbc:mysql://localhost:3306/.companydata.loginuser</string>
+   <object class="zigen.plugin.db.core.Condition">
+    <void property="conditions">
+     <object class="java.util.ArrayList"/>
+    </void>
+    <void property="connectionUrl">
+     <string>jdbc:mysql://localhost:3306/</string>
+    </void>
+    <void property="schema">
+     <string>companydata</string>
+    </void>
+    <void property="table">
+     <string>loginuser</string>
     </void>
    </object>
   </void>

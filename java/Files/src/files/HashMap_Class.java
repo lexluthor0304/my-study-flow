@@ -6,7 +6,7 @@ public class HashMap_Class {
 
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
-		HashMap<String.String>map = new HashMap<String.String>();
+		HashMap<String,String>map = new HashMap<String,String>();
 		map.put("りんご", "apple");
 		map.put("ぶどう", "grapes");
 
