@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <dirs>
-<entry loc="d:\pleiades\java\7" stamp="1425991732000"/>
-<entry loc="d:\pleiades\java\8" stamp="1425991770000"/>
-<entry loc="d:\pleiades\java\6" stamp="1425991688000"/>
+    <entry loc="C:\Program Files\Java\jre-10.0.2" stamp="1534918422922"/>
+    <entry loc="d:\pleiades\java\7" stamp="1425991732000"/>
+    <entry loc="d:\pleiades\java\8" stamp="1425991770000"/>
+    <entry loc="C:\Program Files\Java\jre1.8.0_161" stamp="1523429124357"/>
+    <entry loc="d:\pleiades\java\6" stamp="1425991688000"/>
 </dirs>

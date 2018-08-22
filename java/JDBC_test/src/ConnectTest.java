@@ -1,7 +1,5 @@
 import java.io.BufferedWriter;
-import java.io.File;
 import java.io.FileOutputStream;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
@@ -78,7 +76,7 @@ public class ConnectTest {
 
 				try {
 					//FileWriter fw = new FileWriter("C:\\Users\\liu\\Desktop\\test.csv", true);
-					PrintWriter pw = new PrintWriter(new BufferedWriter(new OutputStreamWriter(new FileOutputStream("C:\\Users\\liu\\Desktop\\test.csv", true), "utf-8")));
+					PrintWriter pw = new PrintWriter(new BufferedWriter(new OutputStreamWriter(new FileOutputStream("C:\\Users\\user\\Desktop\\test.csv", true), "utf-8")));
 
 					pw.println(all);
 					pw.close();
@@ -117,10 +115,10 @@ public class ConnectTest {
 			}
 		}
 	}
-
+/*
 	private void CSVHeaderWriter(String ags) {
 		// TODO 自動生成されたメソッド・スタブ
-		File file = new File("C:\\Users\\liu\\Desktop\\test.csv");
+		File file = new File("C:\\Users\\userDesktop\\test.csv");
 
 		try {
 			FileWriter outputFile = new FileWriter(file);
@@ -130,5 +128,5 @@ public class ConnectTest {
 			// TODO: handle exception
 		}
 	}
-
+*/
 }

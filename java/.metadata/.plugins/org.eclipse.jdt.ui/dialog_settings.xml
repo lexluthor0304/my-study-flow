@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item value="JavaSE-1.7" key="org.eclipse.jdt.ui.last.selected.execution.enviroment"/>
-	<item value="C:\Program Files (x86)\MySQL\Connector.J 5.1" key="org.eclipse.jdt.ui.lastextjar"/>
+	<item value="JavaSE-10" key="org.eclipse.jdt.ui.last.selected.execution.enviroment"/>
+	<item value="C:\Program Files (x86)\MySQL\Connector J 8.0" key="org.eclipse.jdt.ui.lastextjar"/>
+	<item value="filter_imports;" key="filters_last_used"/>
 	<item value="2" key="org.eclipse.jdt.ui.last.selected.jre.kind2"/>
 	<section name="ProblemSeveritiesConfigurationBlock">
 		<item value="false" key="expanded2"/>
@@ -58,13 +59,16 @@
 		<item value="false" key="expanded1"/>
 		<item value="true" key="expanded0"/>
 	</section>
+	<section name="ClasspathContainerSelectionPage">
+		<item value="0" key="index"/>
+	</section>
 	<section name="quick_assist_proposal_size">
 	</section>
 	<section name="NewPackageWizardPage">
-		<item value="false" key="create_package_info_java"/>
+		<item value="true" key="create_package_info_java"/>
 	</section>
 	<section name="BuildPathsPropertyPage">
-		<item value="3" key="pageIndex"/>
+		<item value="2" key="pageIndex"/>
 	</section>
 	<section name="completion_proposal_size">
 		<item value="251" key="size.y"/>
