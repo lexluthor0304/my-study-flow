@@ -2778,3 +2778,9 @@ java.io.IOException: Unable to resolve plug-in "platform:/plugin/EclipseRunner/i
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1471)
+
+!ENTRY org.eclipse.jdt.ui 2 0 2018-08-23 14:56:56.453
+!MESSAGE The 'org.eclipse.recommenders.completion.rcp.javaCompletionProposalComputer.intelligent' proposal computer from the 'org.eclipse.recommenders.completion.rcp' plug-in did not complete normally. The extension took too long to return from the 'computeCompletionProposals()' operation.
+
+!ENTRY org.eclipse.jdt.ui 2 0 2018-08-23 17:33:23.741
+!MESSAGE The 'org.eclipse.recommenders.completion.rcp.javaCompletionProposalComputer.intelligent' proposal computer from the 'org.eclipse.recommenders.completion.rcp' plug-in did not complete normally. The extension took too long to return from the 'computeCompletionProposals()' operation.

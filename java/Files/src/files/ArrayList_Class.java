@@ -12,8 +12,8 @@ public class ArrayList_Class {
 		array.add("イングランド");
 		array.add("ポルトガル");
 		array.add("フランス");
-		String country = array.get(2);
-		System.out.println(country);
+		//String country = array.get(2);
+		System.out.println(array);
 
 	}
 
