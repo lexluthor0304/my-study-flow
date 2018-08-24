@@ -1,27 +1,35 @@
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.SQLException;
 
 
 public class InputDatasToDB {
 	
-	static String filePath = "C:\\Users\\user\\Desktop\\test.csv";
-	static File file = new File(filePath);
-	
-	static int count = 0;
+
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		 String filePath = "C:\\Users\\user\\Desktop\\test.csv";
+		 //File file = new File(filePath);
 		
-		//CSVLoader(buffer);
+
+		
+		BufferedReader buffer = bufferedReader(filePath);
+		
+		try {
+			CSVLoader(buffer);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 	}
 	
-	public BufferedReader bufferedReader(String file) {
+	public static BufferedReader bufferedReader(String file) {
 		
 		try {
 			// buffere
@@ -50,6 +58,7 @@ public class InputDatasToDB {
 			
 			int flg = 0;
 			int flg2 = 0;
+			int count = 0;
 			
 			while ((line = buffer.readLine()) != null) {
 				String[] columns = line.split(",", 0); // 行をカンマで配列に変換
@@ -96,13 +105,13 @@ public class InputDatasToDB {
 						Class.forName("com.mysql.cj.jdbc.Driver");
 						con = DriverManager.getConnection(url, username, password);
 						
-						String sqlStr = "";
+						//String sqlStr = "LOAD DATA LOCAL INFILE 'C:\\\\Users\\\\user\\\\Desktop\\\\test.csv'";
 						
 								System.out.println("Connected......");
 						
 						
 						
-					} catch (Exception e) {
+					} catch (SQLException e) {
 						// TODO: handle exception
 						
 					}
