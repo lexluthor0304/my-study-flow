@@ -12,16 +12,13 @@ public class InputDatasToDB {
 	static String filePath = "C:\\Users\\user\\Desktop\\test.csv";
 	static File file = new File(filePath);
 	
-
-	
-	
 	static int count = 0;
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		CSVLoader();
-		
+		//CSVLoader(buffer);
+
 	}
 	
 	public BufferedReader bufferedReader(String file) {
@@ -76,7 +73,8 @@ public class InputDatasToDB {
 						
 						continue;
 					}
-				//}
+
+					
 					if (len1 < 5) {
 						flg++;
 						continue;
@@ -98,7 +96,9 @@ public class InputDatasToDB {
 						Class.forName("com.mysql.cj.jdbc.Driver");
 						con = DriverManager.getConnection(url, username, password);
 						
-						System.out.println("Connected......");
+						String sqlStr = "";
+						
+								System.out.println("Connected......");
 						
 						
 						
