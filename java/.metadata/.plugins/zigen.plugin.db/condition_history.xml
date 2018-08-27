@@ -2,6 +2,23 @@
 <java version="10.0.2" class="java.beans.XMLDecoder">
  <object class="java.util.HashMap">
   <void method="put">
+   <string>jdbc:mysql://localhost:3306/?characterEncoding=UTF-8&amp;serverTimezone=JST.companydata.empinfo</string>
+   <object class="zigen.plugin.db.core.Condition">
+    <void property="conditions">
+     <object class="java.util.ArrayList"/>
+    </void>
+    <void property="connectionUrl">
+     <string>jdbc:mysql://localhost:3306/?characterEncoding=UTF-8&amp;serverTimezone=JST</string>
+    </void>
+    <void property="schema">
+     <string>companydata</string>
+    </void>
+    <void property="table">
+     <string>empinfo</string>
+    </void>
+   </object>
+  </void>
+  <void method="put">
    <string>jdbc:mysql://localhost:3306/.companydata.country</string>
    <object class="zigen.plugin.db.core.Condition">
     <void property="conditions">
@@ -151,6 +168,23 @@
     </void>
     <void property="table">
      <string>purchase_history</string>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>jdbc:mysql://localhost:3306/?characterEncoding=UTF-8&amp;serverTimezone=JST.companydata.country</string>
+   <object class="zigen.plugin.db.core.Condition">
+    <void property="conditions">
+     <object class="java.util.ArrayList"/>
+    </void>
+    <void property="connectionUrl">
+     <string>jdbc:mysql://localhost:3306/?characterEncoding=UTF-8&amp;serverTimezone=JST</string>
+    </void>
+    <void property="schema">
+     <string>companydata</string>
+    </void>
+    <void property="table">
+     <string>country</string>
     </void>
    </object>
   </void>

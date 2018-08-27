@@ -62,7 +62,8 @@ public class InputDatasToDB {
 			int count = 0;
 			int i = 0;
 			
-			ConnectDB();
+			Connection con = null;
+			con =  ConnectDB();
 			
 			while ((line = buffer.readLine()) != null) {
 				String[] columns = line.split(",", 0); // 行をカンマで配列に変換
@@ -97,14 +98,15 @@ public class InputDatasToDB {
 					// throws SQLexception
 					// make a counter
 					
+					
 
-							InsResource(con, line);
-							i++;
+					InsResource(con, line);
+					i++;
 
 						
-						System.out.println("Connected......Insert now......");
+					System.out.println("Connected......Insert now......");
 						
-						System.out.println(i + "行のデータをインポートした。");
+					System.out.println(i + "行のデータをインポートした。");
 						
 						
 					
@@ -120,7 +122,7 @@ public class InputDatasToDB {
 			
 		}
 	
-	private static void ConnectDB() throws SQLException {
+	private static Connection ConnectDB() throws SQLException {
 		
 		try {
 			String databasename = "companydata";
@@ -130,13 +132,13 @@ public class InputDatasToDB {
 			Connection con = null;
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			con = DriverManager.getConnection(url, username, password);
-						
+			return con;
 		} catch (Exception e) {
 			// TODO: handle exception
 			System.out.println(e);
+			return null;
 		}
 		
-		return con;
 	}
 
 	private static void InsResource(Connection con, String line) {
@@ -147,7 +149,7 @@ public class InputDatasToDB {
 		String countryCd = line.split(",")[3];
 		String sexCd = line.split(",")[4];
 		
-		String insStatement = "INSERT INTO resource VALUES(?,?,?,?,?)";
+		String insStatement = "INSERT INTO empinfo VALUES(?,?,?,?,?)";
 		
 		try {
 			PreparedStatement prepStmt = con.prepareStatement(insStatement);
