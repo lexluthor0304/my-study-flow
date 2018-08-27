@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 
@@ -59,6 +60,9 @@ public class InputDatasToDB {
 			int flg = 0;
 			int flg2 = 0;
 			int count = 0;
+			int i = 0;
+			
+			ConnectDB();
 			
 			while ((line = buffer.readLine()) != null) {
 				String[] columns = line.split(",", 0); // 行をカンマで配列に変換
@@ -84,7 +88,7 @@ public class InputDatasToDB {
 					}
 
 					
-					if (len1 < 5) {
+					if (len1 != 5) {
 						flg++;
 						continue;
 					}
@@ -93,29 +97,21 @@ public class InputDatasToDB {
 					// throws SQLexception
 					// make a counter
 					
+
+							InsResource(con, line);
+							i++;
+
+						
+						System.out.println("Connected......Insert now......");
+						
+						System.out.println(i + "行のデータをインポートした。");
+						
+						
 					
 					
-					try {
-						
-						String databasename = "companydata";
-						String username = "root";
-						String password = "root";
-						String url = "jdbc:mysql://localhost:3306/" + databasename;
-						Connection con = null;
-						Class.forName("com.mysql.cj.jdbc.Driver");
-						con = DriverManager.getConnection(url, username, password);
-						
-						//String sqlStr = "LOAD DATA LOCAL INFILE 'C:\\\\Users\\\\user\\\\Desktop\\\\test.csv'";
-						
-								System.out.println("Connected......");
-						
-						
-						
-					} catch (SQLException e) {
-						// TODO: handle exception
-						
-					}
 			}
+			
+			
 			System.out.println(flg2 + "行社員番号は数字ではない");
 			System.out.println(flg + "行項目足りない");
 			//input.close();
@@ -123,6 +119,60 @@ public class InputDatasToDB {
 			buffer.close();
 			
 		}
+	
+	private static void ConnectDB() throws SQLException {
+		
+		try {
+			String databasename = "companydata";
+			String username = "root";
+			String password = "root";
+			String url = "jdbc:mysql://localhost:3306/" + databasename;
+			Connection con = null;
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			con = DriverManager.getConnection(url, username, password);
+						
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.out.println(e);
+		}
+		
+		return con;
+	}
+
+	private static void InsResource(Connection con, String line) {
+		// TODO Auto-generated method stub
+		String empCd = line.split(",")[0];
+		String name = line.split(",")[1];
+		String birthday = line.split(",")[2];
+		String countryCd = line.split(",")[3];
+		String sexCd = line.split(",")[4];
+		
+		String insStatement = "INSERT INTO resource VALUES(?,?,?,?,?)";
+		
+		try {
+			PreparedStatement prepStmt = con.prepareStatement(insStatement);
+			
+			prepStmt.setString(1, empCd);
+			prepStmt.setString(2, name);
+			prepStmt.setString(3, birthday);
+			prepStmt.setString(4, countryCd);
+			prepStmt.setString(5, sexCd);
+			
+			int num = prepStmt.executeUpdate();
+			
+		} catch (SQLException e) {
+			// TODO: handle exception
+			System.out.println("SQLException:" + e.getMessage());
+			System.out.println("	SQLState:" + e.getSQLState());
+			System.out.println("VendorError" + e.getErrorCode());
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.out.println(e.getMessage());
+		}
+		
+	}
+	
+
 
 }
 	

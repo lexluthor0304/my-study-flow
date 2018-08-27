@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<item value="JavaSE-10" key="org.eclipse.jdt.ui.last.selected.execution.enviroment"/>
-	<item value="C:\Program Files (x86)\MySQL\Connector J 8.0" key="org.eclipse.jdt.ui.lastextjar"/>
+	<item value="C:\Users\user\Desktop\Ko&apos;s_javaWorkSpace\my-study-flow\JavaLib" key="org.eclipse.jdt.ui.lastextjar"/>
 	<item value="filter_imports;" key="filters_last_used"/>
 	<item value="2" key="org.eclipse.jdt.ui.last.selected.jre.kind2"/>
 	<section name="ProblemSeveritiesConfigurationBlock">
@@ -13,6 +13,9 @@
 		<item value="false" key="expanded5"/>
 		<item value="false" key="expanded7"/>
 		<item value="true" key="expanded0"/>
+	</section>
+	<section name="SelfEncapsulateFieldWizard">
+		<item value="false" key="GenerateJavadoc"/>
 	</section>
 	<section name="DialogBounds_SuperInterfaceSelectionDialog">
 		<item value="373" key="DIALOG_WIDTH"/>

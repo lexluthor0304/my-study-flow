@@ -1,9 +1,0 @@
-package televison;
-
-public class TV {
-
-	public TV() {
-		// TODO 自動生成されたコンストラクター・スタブ
-	}
-
-}

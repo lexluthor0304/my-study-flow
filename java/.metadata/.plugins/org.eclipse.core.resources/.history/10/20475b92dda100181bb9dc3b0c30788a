@@ -1,9 +1,0 @@
-package televison;
-
-class Televison_new {
-
-	public static void main(String args) {
-		Televison tv = new Televison();
-		Televison tv2 = new Televison();
-	}
-}
