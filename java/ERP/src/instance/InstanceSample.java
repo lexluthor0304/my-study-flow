@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class InstanceSample
  */
-@WebServlet("/InstanceSample")
+//@WebServlet("/InstanceSample")
 public class InstanceSample extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
