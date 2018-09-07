@@ -6,10 +6,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 
 public class HelloController {
-
-	@RequestMapping("/")
+//print hello world
+	@RequestMapping("/hello")
 	public String index() {
 		return "hello Spring boot";
 	}
+//get element for application.yml
+
 
 }
