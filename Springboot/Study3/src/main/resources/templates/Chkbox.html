@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+h1 {
+	font-size: 18pt;
+	font-weight: bold;
+	color: gray;
+}
+
+body {
+	font-size: 13pt;
+	color: gray;
+	margin: 5px 25px;
+}
+
+pre {
+	font-size: 13pt;
+	color: gray;
+	padding: 5px 10px;
+	boder: 1px sold gray;
+}
+</style>
+</head>
+<body>
+	<h1>Checkbox page</h1>
+	<pre th:text="${msg}">please wait......</pre>
+	<form method="post" action="/Chkbox">
+		<div>
+			<input type="checkbox" id="check1" name="check1" /> <label
+				for="check1">チェック</label>
+		</div>
+		<div>
+			<input type="radio" id="radioA" name="radio1" value="male" /> <label
+				for="radioA">男性</label>
+		</div>
+		<div>
+			<input type="radio" id="radioB" name="radio1" value="female" /> <label
+				for="radioB">女性</label>
+		</div>
+		<br>
+		<div>
+			<select id="select1" name="select1" size="4">
+				<option value="Windows">Windows</option>
+				<option value="Mac">Mac</option>
+				<option value="Linux">Linux</option>
+			</select> <select id="select2" name="select2" size="4" multiple="multiple">
+				<option value="Android">Android</option>
+				<option value="iPhone">iPhone</option>
+				<option value="Winfone">Winfone</option>
+			</select>
+		</div>
+		<br>
+		<input type="submit" value="Click" />
+	</form>
+</body>
+</html>

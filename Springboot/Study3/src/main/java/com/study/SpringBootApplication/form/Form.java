@@ -10,7 +10,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 public class Form {
 
-	@RequestMapping(value = "/", method = RequestMethod.GET)
+	@RequestMapping(value = "/form", method = RequestMethod.GET)
 	public ModelAndView index(ModelAndView mav) {
 		mav.setViewName("form");
 		mav.addObject("msg", "お名前を書いて送信して下さい");
@@ -18,7 +18,7 @@ public class Form {
 		return mav;
 	}
 	
-	@RequestMapping(value = "/", method = RequestMethod.POST)
+	@RequestMapping(value = "/form", method = RequestMethod.POST)
 	public ModelAndView send(@RequestParam("text1")String str, 
 			ModelAndView mav) {
 		mav.addObject("msg", "こんにちは、" + str + "さん！");
