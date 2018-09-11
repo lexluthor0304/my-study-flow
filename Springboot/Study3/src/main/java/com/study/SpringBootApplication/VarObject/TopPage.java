@@ -1,21 +1,25 @@
-/*package com.study.SpringBootApplication.DataObject;
+package com.study.SpringBootApplication.VarObject;
 
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.ModelAndView;
 
 @RestController
 
-public class HelloController {
+public class TopPage {
 	String[] names = { "tuyano", "hanako", "taro", "sachiko", "ichiro" };
 
 	String[] mails = { "syoda@tuuyano.com", "hanako@flower", "taro@yamada", "sachiko@happy", "ichiro@baseball"
 
 	};
 
-	@RequestMapping("/{id}")
-	public DataObject index(@PathVariable int id) {
-		return new DataObject(id, names[id], mails[id]);
+	@RequestMapping(value = "/top")
+	public ModelAndView top(ModelAndView mav) {
+		mav.setViewName("top");
+		mav.addObject("msg", "current data.");
+		DataObject obj = new DataObject(123, "hanako", "hanako@flower");
+		mav.addObject("object", obj);
+		return mav;
 	}
 
 	class DataObject {
@@ -55,6 +59,4 @@ public class HelloController {
 			this.value = value;
 		}
 	}
-
 }
-*/
