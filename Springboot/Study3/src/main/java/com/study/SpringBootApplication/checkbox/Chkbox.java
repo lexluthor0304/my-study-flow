@@ -22,7 +22,7 @@ public class Chkbox {
 			@RequestParam(value="check1", required=false)boolean check1, 
 			@RequestParam(value="radio1", required=false)String radio1, 
 			@RequestParam(value="select1", required=false)String select1, 
-			@RequestParam(value="select2", required=false)String[] select2, 
+			@RequestParam(value="select2", required=false)String select2, 
 			ModelAndView mav) {
 		
 		String res = "";
@@ -30,11 +30,11 @@ public class Chkbox {
 			res = "check:" + check1 +
 					" radio:" + radio1 +
 					" select:" + select1 +
-					"\nselect2:" /*+ select2*/;
+					"\nselect2:" + select2;
 		} catch (NullPointerException e) {
 			// TODO: handle exception
 			}
-		try {
+		/*try {
 			res += select2[0];
 			for (int i = 1; i < select2.length; i++) {
 				res += ", " + select2[i];
@@ -42,7 +42,7 @@ public class Chkbox {
 		} catch (NullPointerException e) {
 			// TODO: handle exception
 			res += "null";
-		}
+		}*/
 		mav.addObject("msg", res);
 		mav.setViewName("Chkbox");
 		return mav;

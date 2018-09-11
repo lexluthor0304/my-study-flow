@@ -4,13 +4,26 @@
 <meta charset="UTF-8">
 <title>Demo page</title>
 <style>
-h1 { font-size:18pt; font-weight:bold; color:gray;}
-body { font-size:13pt; color:gray; margin:5px 25px;}
+h1 {
+	font-size: 18pt;
+	font-weight: bold;
+	color: gray;
+}
+
+body {
+	font-size: 13pt;
+	color: gray;
+	margin: 5px 25px;
+}
 </style>
 </head>
 <body>
-<h1>Hello page</h1>
-<p class="msg" th:text="${msg}"></p>
-<p class="msg">this page is thymeleaf sample page.</p>
+	<h1>Hello page</h1>
+	<p class="msg" th:text="${msg}"></p>
+	<p class="msg">this page is thymeleaf sample page.</p>
+	<p th:text="${new java.util.Date().toString()}"></p>
+	<p th:text="${#dates.format(new java.util.Date(),'dd/MM/yyy HH:mm:ss')}"></p>
+	<p th:text="${#numbers.formatInteger(1234,7)}"></p>
+	<p th:text="${#strings.toUpperCase('welcome to spring')}"></p>
 </body>
 </html>
