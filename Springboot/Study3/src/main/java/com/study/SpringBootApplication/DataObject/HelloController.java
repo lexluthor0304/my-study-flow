@@ -1,4 +1,4 @@
-/*package com.study.SpringBootApplication.DataObject;
+package com.study.SpringBootApplication.DataObject;
 
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -57,4 +57,3 @@ public class HelloController {
 	}
 
 }
-*/

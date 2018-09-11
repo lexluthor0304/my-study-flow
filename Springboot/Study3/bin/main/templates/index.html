@@ -14,7 +14,7 @@ body {
 	font-size: 13pt;
 	color: gray;
 	margin: 5px 25px;
-}
+}templates
 </style>
 </head>
 <body>
@@ -25,5 +25,11 @@ body {
 	<p th:text="${#dates.format(new java.util.Date(),'dd/MM/yyy HH:mm:ss')}"></p>
 	<p th:text="${#numbers.formatInteger(1234,7)}"></p>
 	<p th:text="${#strings.toUpperCase('welcome to spring')}"></p>
+	<!-- <p th:text="'from parameter... id=' + ${param.id[0] + ',name=' + param.name[0]}"></p> -->
+	
+	<h1 th:text="#{content.title}">Hola amigo</h1>
+	<p th:text="#{content.message}"></p>
+	
+	<p><a th:href="@{/home/(id=${param.id[0]})}">link</a></p>
 </body>
 </html>

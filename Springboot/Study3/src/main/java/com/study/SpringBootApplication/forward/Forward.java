@@ -24,4 +24,10 @@ public class Forward {
 		 mav2.setViewName("forward:/");
 		 return mav2;
 	 }
+	 
+	 @RequestMapping(value="/home1")
+	 public ModelAndView index1(ModelAndView mav) {
+		 mav.setViewName("index1");
+		 return mav;
+	 }
 }
