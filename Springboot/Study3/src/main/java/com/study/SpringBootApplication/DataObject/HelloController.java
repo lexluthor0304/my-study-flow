@@ -1,5 +1,7 @@
 package com.study.SpringBootApplication.DataObject;
 
+import java.util.ArrayList;
+
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,7 +17,7 @@ public class HelloController {
 
 	};
 	/*
-	 * バージョン1
+	 * バージョン1 return id
 	 */
 	/*
 	 * @RequestMapping("/{id}") public DataObject index(@PathVariable int id) {
@@ -23,7 +25,7 @@ public class HelloController {
 	 */
 
 	/*
-	 * バージョン2
+	 * バージョン2 偶数奇数チェック
 	 */
 
 	/*
@@ -37,7 +39,7 @@ public class HelloController {
 	 */
 
 	/*
-	 * バージョン3
+	 * バージョン3 0以上
 	 */
 	/*
 	 * @RequestMapping("/{id}") public ModelAndView index(@PathVariable int id,
@@ -49,9 +51,9 @@ public class HelloController {
 	 */
 
 	/*
-	 * バージョン4
+	 * バージョン4 季節判断
 	 */
-	@RequestMapping("/{mouth}")
+/*	@RequestMapping("/{mouth}")
 	public ModelAndView index(@PathVariable int mouth, ModelAndView mav_var) {
 
 		mav_var.setViewName("month");
@@ -60,8 +62,24 @@ public class HelloController {
 		mav_var.addObject("month", m);
 		mav_var.addObject("check", Math.floor(m / 3));
 		return mav_var;
-	}
+	}*/
 
+	/*
+	 * バージョン5 循環
+	 */
+	@RequestMapping("/{mouth}")
+	public ModelAndView index(ModelAndView mav_var) {
+
+		mav_var.setViewName("month");
+		ArrayList<String[]> data = new ArrayList<String[]>();
+		data.add(new String[] {"taro", "taro@yamada", "090-9999-9999"});
+		data.add(new String[] {"hanako", "hanako@flower", "080-8888-8888"});
+		data.add(new String[] {"sachiko", "sachiko@happy", "080-8888-8888"});
+		mav_var.addObject("data", data);
+		return mav_var;
+	}
+	
+	
 	class DataObject {
 		private int id;
 		private String name;
