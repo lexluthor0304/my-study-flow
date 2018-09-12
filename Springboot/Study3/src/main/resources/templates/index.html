@@ -31,5 +31,10 @@ body {
 	<p th:text="#{content.message}"></p>
 	
 	<!-- <p><a th:href="@{/home/(id=${param.id[0]})}">link</a></p> -->
+	
+	<p th:utext="${html_msg1}">message.</p>
+	
+	<p th:text="${id} + ' is ' + (${check}) ? ${trueVal} : ${falseVal}"></p>
+	
 </body>
 </html>

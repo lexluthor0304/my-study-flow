@@ -52,5 +52,11 @@ td {
 			<td th:text="*{value}"></td>
 		</tr>
 	</table>
+	
+	<div th:object="${object}">
+	<p th:text="|my name is *{name}. mail address is *{value}.|">
+	messges.
+	</p>
+	</div>
 </body>
 </html>

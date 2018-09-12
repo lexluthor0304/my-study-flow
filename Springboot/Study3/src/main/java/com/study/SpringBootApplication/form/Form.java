@@ -11,19 +11,19 @@ import org.springframework.web.servlet.ModelAndView;
 public class Form {
 
 	@RequestMapping(value = "/form", method = RequestMethod.GET)
-	public ModelAndView index(ModelAndView mav) {
-		mav.setViewName("form");
-		mav.addObject("msg", "お名前を書いて送信して下さい");
+	public ModelAndView index(ModelAndView mav_form) {
+		mav_form.setViewName("form");
+		mav_form.addObject("msg_form", "お名前を書いて送信して下さい");
 		
-		return mav;
+		return mav_form;
 	}
 	
 	@RequestMapping(value = "/form", method = RequestMethod.POST)
 	public ModelAndView send(@RequestParam("text1")String str, 
-			ModelAndView mav) {
-		mav.addObject("msg", "こんにちは、" + str + "さん！");
-		mav.addObject("value", str);
-		mav.setViewName("form");
-		return mav;
+			ModelAndView mav_form) {
+		mav_form.addObject("msg_form", "こんにちは、" + str + "さん！");
+		mav_form.addObject("value", str);
+		mav_form.setViewName("form");
+		return mav_form;
 	}
 }

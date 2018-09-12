@@ -14,12 +14,12 @@ public class TopPage {
 	};
 
 	@RequestMapping(value = "/top")
-	public ModelAndView top(ModelAndView mav) {
-		mav.setViewName("top");
-		mav.addObject("msg", "current data.");
+	public ModelAndView top(ModelAndView mav3) {
+		mav3.setViewName("top");
+		mav3.addObject("msg", "current data.");
 		DataObject obj = new DataObject(123, "hanako", "hanako@flower");
-		mav.addObject("object", obj);
-		return mav;
+		mav3.addObject("object", obj);
+		return mav3;
 	}
 
 	class DataObject {

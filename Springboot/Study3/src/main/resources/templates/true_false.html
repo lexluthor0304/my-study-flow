@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Demo page</title>
+<style>
+h1 {
+	font-size: 18pt;
+	font-weight: bold;
+	color: gray;
+}
+
+body {
+	font-size: 13pt;
+	color: gray;
+	margin: 5px 25px;
+}
+</style>
+</head>
+<body>
+	<h1>Hello page</h1>
+	
+	<p th:if="${check}" th:text="${id} + ' is ' + ${trueVal}">message.</p>
+	<p th:unless="${check}" th:text="${id} + ' is ' + ${falseVal}">message.</p>
+	
+</body>
+</html>
